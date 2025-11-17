@@ -1,0 +1,123 @@
+import Skeleton from '@mui/material/Skeleton';
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import Divider from '@mui/material/Divider';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
+import { useTheme } from '@mui/material/styles';
+
+import { Chart } from 'src/components/chart';
+
+const useChartOptions = () => {
+  const theme = useTheme();
+
+  return {
+    chart: {
+      background: 'transparent',
+      toolbar: {
+        show: false
+      },
+      zoom: {
+        enabled: false
+      }
+    },
+    colors: [theme.palette.primary.main],
+    dataLabels: {
+      enabled: false
+    },
+    fill: {
+      gradient: {
+        opacityFrom: 0.5,
+        opacityTo: 0,
+        stops: [0, 100]
+      },
+      type: 'gradient'
+    },
+    grid: {
+      show: false,
+      padding: {
+        bottom: 0,
+        left: 0,
+        right: 0,
+        top: 0
+      }
+    },
+    stroke: {
+      curve: 'smooth',
+      width: 3
+    },
+    theme: {
+      mode: theme.palette.mode
+    },
+    tooltip: {
+      enabled: false
+    },
+    xaxis: {
+      axisBorder: {
+        show: false
+      },
+      axisTicks: {
+        show: false
+      },
+      labels: {
+        show: false
+      }
+    },
+    yaxis: {
+      show: false
+    }
+  };
+};
+
+export const AnalyticsStats = ({ action, chartSeries, value, title, isLoading }) => {
+  const chartOptions = useChartOptions();
+
+  return (
+    <Card>
+      <Stack
+        alignItems="center"
+        direction="row"
+        justifyContent="space-between"
+        spacing={2}
+        sx={{
+          px: 3,
+          py: 2
+        }}
+      >
+        <div>
+          <Typography
+            color="text.secondary"
+            variant="body2"
+            noWrap
+          >
+            {title}
+          </Typography>
+
+          {isLoading ? <Skeleton sx={{ height: 40 }} />
+            :
+            <Typography
+              sx={{ mt: 1 }}
+              variant="h5"
+            >
+              {value}
+            </Typography>}
+        </div>
+        <Box sx={{ width: 200 }}>
+          {isLoading ? <Skeleton sx={{ height: 80 }} /> :
+            <Chart
+              height={100}
+              options={chartOptions}
+              series={chartSeries}
+              type="area"
+            />
+          }
+        </Box>
+      </Stack>
+      <Divider />
+      <CardActions>
+        {action}
+      </CardActions>
+    </Card>
+  );
+};

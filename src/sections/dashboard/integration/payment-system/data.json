@@ -1,0 +1,332 @@
+[
+  {
+      "type": "instaxchange",
+      "name": "InstaXChange",
+      "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,",
+      "website": "https://instaxchange.com",
+      "logo": "/assets/providers/instaxchange.jpeg",
+      "pdf_path": "/assets/providers/pdf/INSTAXCHANGE.pdf",
+      "id": 1,
+      "existing_count": 12,
+      "rating": 0,
+      "review_count": 0,
+      "supported_languages": [
+          "en",
+          "de",
+          "es",
+          "fr",
+          "it",
+          "pt",
+          "ru",
+          "zh"
+      ]
+  },
+  {
+      "type": "xoala",
+      "name": "XOALA",
+      "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC,",
+      "website": "https://xoala.com",
+      "logo": "/assets/providers/xoala.png",
+      "pdf_path": "/assets/providers/pdf/XOALA.pdf",
+      "id": 4,
+      "existing_count": 0,
+      "rating": 0,
+      "review_count": 0,
+      "supported_currencies": [
+          "USD",
+          "EUR",
+          "GBP",
+          "SEK",
+          "NOK"
+      ],
+      "supported_languages": [
+          "en",
+          "de",
+          "es",
+          "fr",
+          "it",
+          "sv",
+          false
+      ]
+  },
+  {
+    "type": "atlas24",
+    "name": "Atlas24",
+    "description": "Global payment gateway with multi-currency support and fraud protection",
+    "website": "https://atlas24.com",
+    "logo": "/assets/icons/payment/visa-mastercard.webp",
+    "pdf_path": "",
+    "id": 3,
+    "existing_count": 12,
+    "rating": 0,
+    "review_count": 0,
+    "supported_languages": [
+        "en",
+        "de",
+        "es",
+        "fr",
+        "it",
+        "sv",
+        false
+    ],
+    "supported_currencies": [
+          "USD",
+          "EUR",
+          "GBP",
+          "SEK",
+          "NOK"
+      ]
+},
+{
+    "type": "awesomepayments",
+    "name": "Awesome Payments",
+    "description": "Cryptocurrency payment processor with multiple blockchain support",
+    "website": "https://awesomepayments.com",
+    "logo": "/assets/icons/payment/awp.png",
+    "pdf_path": "",
+    "id": 2,
+    "existing_count": 12,
+    "rating": 0,
+    "review_count": 0,
+    "supported_languages": [
+        "en",
+        "de",
+        "es",
+        "fr",
+        "it",
+        "sv",
+        false
+    ],
+    "supported_currencies": [
+          "USD",
+          "EUR",
+          "GBP",
+          "SEK",
+          "NOK"
+      ]
+},
+{
+    "type": "fintech_pay",
+    "name": "Fintech Pay",
+    "description": "Fintech payment solution with embedded checkout and API integration",
+    "website": "https://fintechpay.com",
+    "logo": "/assets/icons/payment/fintech-pay.webp",
+    "pdf_path": "",
+    "id": 3,
+    "existing_count": 12,
+    "rating": 0,
+    "review_count": 0,
+    "supported_languages": [
+        "en",
+        "de",
+        "es",
+        "fr",
+        "it",
+        "sv",
+        false
+    ],
+    "supported_currencies": [
+          "USD",
+          "EUR",
+          "GBP",
+          "SEK",
+          "NOK"
+      ]
+},
+{
+    "type": "gateway_pay",
+    "name": "Gateway Pay",
+    "description": "Payment gateway with multiple acquirer connections and routing",
+    "website": "https://gatewaypay.com",
+    "logo": "/assets/icons/payment/gateway-pay.jpeg",
+    "pdf_path": "",
+    "id": 3,
+    "existing_count": 12,
+    "rating": 0,
+    "review_count": 0,
+    "supported_languages": [
+        "en",
+        "de",
+        "es",
+        "fr",
+        "it",
+        "sv",
+        false
+    ],
+    "supported_currencies": [
+          "USD",
+          "EUR",
+          "GBP",
+          "SEK",
+          "NOK"
+      ]
+},
+{
+    "type": "interio",
+    "name": "Interio Checkout",
+    "description": "Modern checkout system with multiple payment methods, 3DS support, and comprehensive API",
+    "website": "https://interio.com",
+    "logo": "/assets/icons/payment/visa-mastercard.webp",
+    "pdf_path": "",
+    "id": 3,
+    "existing_count": 12,
+    "rating": 0,
+    "review_count": 0,
+    "supported_languages": [
+        "en",
+        "de",
+        "es",
+        "fr",
+        "it",
+        "sv",
+        false
+    ],
+    "supported_currencies": [
+          "USD",
+          "EUR",
+          "GBP",
+          "SEK",
+          "NOK"
+      ]
+},
+{
+    "type": "pay_pros",
+    "name": "Pay Pros",
+    "description": "Professional payment processing with advanced features and reporting",
+    "website": "https://paypros.com",
+    "logo": "/assets/icons/payment/pay-pros.png",
+    "pdf_path": "",
+    "id": 3,
+    "existing_count": 12,
+    "rating": 0,
+    "review_count": 0,
+    "supported_languages": [
+        "en",
+        "de",
+        "es",
+        "fr",
+        "it",
+        "sv",
+        false
+    ],
+    "supported_currencies": [
+          "USD",
+          "EUR",
+          "GBP",
+          "SEK",
+          "NOK"
+      ]
+},
+{
+    "type": "paycashio",
+    "name": "PayCashio",
+    "description": "European payment processor with card processing and digital wallet support",
+    "website": "https://paycashio.com",
+    "logo": "/assets/icons/payment/paycashio-pay.png",
+    "pdf_path": "",
+    "id": 3,
+    "existing_count": 12,
+    "rating": 0,
+    "review_count": 0,
+    "supported_languages": [
+        "en",
+        "de",
+        "es",
+        "fr",
+        "it",
+        "sv",
+        false
+    ],
+    "supported_currencies": [
+          "USD",
+          "EUR",
+          "GBP",
+          "SEK",
+          "NOK"
+      ]
+},
+{
+    "type": "payretailers",
+    "name": "PayRetailers",
+    "description": "Latin American payment specialist with local payment methods and currencies",
+    "website": "https://payretailers.com",
+    "logo": "/assets/icons/payment/payretailers.png",
+    "pdf_path": "",
+    "id": 3,
+    "existing_count": 12,
+    "rating": 0,
+    "review_count": 0,
+    "supported_languages": [
+        "en",
+        "de",
+        "es",
+        "fr",
+        "it",
+        "sv",
+        false
+    ],
+    "supported_currencies": [
+          "USD",
+          "EUR",
+          "GBP",
+          "SEK",
+          "NOK"
+      ]
+},
+{
+    "type": "simple_psp",
+    "name": "Simple PSP",
+    "description": "Simple and straightforward payment processing solution",
+    "website": "https://simplepsp.com",
+    "logo": "/assets/icons/payment/visa-mastercard.webp",
+    "pdf_path": "",
+    "id": 3,
+    "existing_count": 12,
+    "rating": 0,
+    "review_count": 0,
+    "supported_languages": [
+        "en",
+        "de",
+        "es",
+        "fr",
+        "it",
+        "sv",
+        false
+    ],
+    "supported_currencies": [
+          "USD",
+          "EUR",
+          "GBP",
+          "SEK",
+          "NOK"
+      ]
+},
+{
+    "type": "sky_chain",
+    "name": "Sky Chain",
+    "description": "Blockchain-based payment processing with smart contract integration",
+    "website": "https://skychain.io",
+    "logo": "/assets/icons/payment/skychain-pay.jpeg",
+    "pdf_path": "",
+    "id": 3,
+    "existing_count": 12,
+    "rating": 0,
+    "review_count": 0,
+    "supported_languages": [
+        "en",
+        "de",
+        "es",
+        "fr",
+        "it",
+        "sv",
+        false
+    ],
+    "supported_currencies": [
+          "USD",
+          "EUR",
+          "GBP",
+          "SEK",
+          "NOK"
+      ]
+}
+]

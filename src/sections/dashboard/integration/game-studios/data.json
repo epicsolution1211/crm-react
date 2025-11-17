@@ -1,0 +1,1064 @@
+[
+  {
+      "type": "booming_games",
+      "name": "Booming Games",
+      "description": "Booming Games is a B2B game-provider established in 2014, known for its portfolio of video slots and branded content, mobile-friendly design and reliable integration.",
+      "full_description": "As a leading provider of online casino games, Booming Games is your gateway to the best video slots in the iGaming business, accessible right from the palm of your hand. We've streamlined the process, making it easy, convenient, and thrilling for casino operators to provide our extensive range of slot games on any device. We provide rapid and seamless wallet API integration, efficient back-office administration, and a range of enticing promotional tools to engage your players and empower your casino to thrive.",
+      "title": "Casino Games That Bring the BOOM",
+      "website": "https://booming-games.com",
+      "logo": "/assets/providers/booming-games.jpg",
+      "pdf_path": "/assets/providers/pdf/Booming Games.pdf",
+      "id": 1,
+      "existing_count": 12,
+      "rating": 0,
+      "review_count": 0,
+      "reviews": [
+        {
+          "rating": 5,
+          "review": "Booming Games slots are fantastic for variety. I love how they mix classic 7s with new, inventive features. They always run perfectly on my mobile."
+        },
+        {
+          "rating": 4,
+          "review": "Solid provider with unique bonus mechanics. Their 2-Way Pay and Multiplying Paylines make the base game more exciting. The art style is strong but sometimes too niche."
+        },
+        {
+          "rating": 5,
+          "review": "I look for their games specifically. Cash Pig is a masterpiece—the Vegas theme and constant feature drops keep me engaged. Great production quality all around."
+        },
+        {
+          "rating": 4,
+          "review": "If you're nostalgic for older video slots, this is your studio. They have that consistent, simple feel but update it with modern volatility. Never had a loading issue."
+        },
+        {
+          "rating": 4,
+          "review": "Booming Games is forward-thinking. It’s great to see a provider who develops games with crypto casinos in mind. The rapid releases keep the portfolio fresh."
+        }
+      ],
+      "can_add_more": true,
+      "has_engine": true,
+      "required_credentials": [
+          "api_url",
+          "api_key",
+          "api_secret"
+      ],
+      "supported_features": [
+          "demo_mode",
+          "real_money",
+          "campaigns",
+          "free_spins",
+          "tournaments",
+          "mobile_optimized",
+          "desktop"
+      ],
+      "supported_currencies": [
+          "USD",
+          "EUR",
+          "GBP",
+          "CAD",
+          "AUD",
+          "BTC",
+          "ETH"
+      ],
+      "supported_languages": [
+          "en",
+          "de",
+          "es",
+          "fr",
+          "it",
+          "pt",
+          "ru",
+          "zh"
+      ],
+      "game_types": [
+          "Video Slots",
+          "Bonus Features",
+          "Jackpot Slots"
+      ],
+      "technical_specs": {
+          "max_concurrent_sessions": 10000,
+          "session_timeout_minutes": 30,
+          "supports_https": true,
+          "ip_whitelist_required": true
+      },
+      "contacts": [
+        {
+          "name": "Max Niehusen",
+          "position": "Chief Executive Officer",
+          "email": "sales@booming-games.com"
+        },
+        {
+          "name": "Frederik Niehusen",
+          "position": "Chief Commercial Officer",
+          "email": "sales@booming-games.com"
+        }
+      ]
+  },
+  {
+      "type": "evo_play",
+      "name": "EVOPLAY",
+      "description": "Evoplay is a leading casino-games provider offering over 250 innovative, high-quality HTML5 titles designed for any device.",
+      "full_description": "Experience the smoothest integration with simple API, game hosting, and two wallets: seamless and transfer. You’ll also get HTML5 games that work on any device, 360-degree marketing, and the best personalized partner support in the industry: direct chats are answered 24/7 and within just 15 minutes – giving you industry-leading response times. We also offer English, Russian and Chinese language support.",
+      "title": "GAMES MADE JUST FOR YOU",
+      "website": "https://evo-play.com",
+      "logo": "/assets/providers/evo-play.png",
+      "pdf_path": "/assets/providers/pdf/Evoplay.pdf",
+      "id": 4,
+      "existing_count": 0,
+      "rating": 0,
+      "review_count": 0,
+      "reviews": [
+        {
+          "rating": 5,
+          "review": "Evoplay's games are on another level. The 3D graphics and animations are absolutely stunning, way better than most other providers. Their RPG-style slots are a must-try."
+        },
+        {
+          "rating": 4,
+          "review": "Really solid provider. I enjoy their instant games and the unique themes. Some of the slots are a bit too complex for me, but I appreciate that they're trying something new."
+        },
+        {
+          "rating": 5,
+          "review": "Their games work perfectly on my phone. They load fast, and the quality is amazing, even on a small screen. A top-tier developer for mobile players."
+        },
+        {
+          "rating": 5,
+          "review": "I specifically look for online casinos that have Evoplay games. Elven Princesses is one of my all-time favorite slots. The gameplay is smooth, and the bonus features are fantastic."
+        },
+        {
+          "rating": 5,
+          "review": "A very innovative and high-quality game studio. You can tell they put a lot of effort into their designs. I'd love to see them release more classic table games, but their slots are great."
+        }
+      ],
+      "can_add_more": true,
+      "has_engine": false,
+      "required_credentials": [
+          "api_url",
+          "operator_id",
+          "api_token"
+      ],
+      "supported_features": [
+          "live_casino",
+          "mobile_optimized",
+          "desktop",
+          "multi_language"
+      ],
+      "supported_currencies": [
+          "USD",
+          "EUR",
+          "GBP",
+          "SEK",
+          "NOK"
+      ],
+      "supported_languages": [
+          "en",
+          "de",
+          "es",
+          "fr",
+          "it",
+          "sv",
+          false
+      ],
+      "game_types": [
+          "Video Slots",
+          "Jackpot Games",
+          "Instant Games",
+          "Table Games",
+          "Bonus Buy Games",
+          "Classic Games",
+          "Branded Games"
+      ],
+      "technical_specs": {
+          "max_concurrent_sessions": 2000,
+          "session_timeout_minutes": 60,
+          "supports_https": true
+      },
+      "contacts": [
+        {
+          "name": "Ivan Kravchuk",
+          "position": "Chief Executive Officer",
+          "email": "business@evoplay.games"
+        },
+        {
+          "name": "Ihor Zarechnyi",
+          "position": "Chief Commercial Officer",
+          "email": "business@evoplay.games"
+        },
+        {
+          "name": "Privacy / DPO",
+          "position": "Data Protection Officer",
+          "email": "privacy@evoplay.games"
+        }
+      ]
+  },
+  {
+    "type": "peter_and_sons",
+    "name": "Peter & Sons",
+    "description": "Peter & Sons is a creative-led studio on a mission to set a new standard in the gaming industry. Their focus is on bold artistry, distinctive game-brands.",
+    "full_description": "We provide unique gamified products using cutting-edge technologies. Your platform with our games will be the best. Become the go-to solution for web and mobile apps, just as numerous founders, startups, and agencies have. Enjoy multilingual casino games with swift integration, enhancing your gaming experience globally",
+    "title": "Take Your Gaming Business to the Next Level",
+    "website": "https://peterandsonsgames.com/",
+    "logo": "/assets/providers/peter-and-sons.png",
+    "pdf_path": "/assets/providers/pdf/Peter&Sons.pdf",
+    "id": 4,
+    "rating": 0,
+    "review_count": 0,
+    "reviews": [
+        {
+          "rating": 5,
+          "review": "Peter & Sons art style is truly unique. It feels like a graphic novel meets a slot machine. The physics and animations are unmatched, running flawlessly on mobile."
+        },
+        {
+          "rating": 4,
+          "review": "Quirky themes and highly volatile action. The Yggdrasil-partnered games always deliver innovation. Mechanics are complex but highly rewarding, though the niche art might not be for everyone."
+        },
+        {
+          "rating": 5,
+          "review": "Wild Duel is an absolute blast—the western theme with that signature hand-drawn style is fantastic. Great execution on the feature buy options and constant feature drops."
+        },
+        {
+          "rating": 4,
+          "review": "They manage to feel retro but futuristic at the same time. The bonus rounds often include unique progression systems. Very stable and high-quality production across their portfolio."
+        },
+        {
+          "rating": 4,
+          "review": "Peter & Sons is truly anti-boring. They push visual and mechanical boundaries, resulting in games that feel more like console titles than standard slots. Rapid releases keep the portfolio fresh."
+        }
+      ],
+    "existing_count": 0,
+    "can_add_more": true,
+    "has_engine": false,
+    "required_credentials": [
+        "api_url",
+        "operator_id",
+        "api_token"
+    ],
+    "supported_features": [
+        "live_casino",
+        "mobile_optimized",
+        "desktop",
+        "multi_language"
+    ],
+    "supported_currencies": [
+        "USD",
+        "EUR",
+        "GBP",
+        "SEK",
+        "NOK"
+    ],
+    "supported_languages": [
+        "en",
+        "de",
+        "es",
+        "fr",
+        "it",
+        "sv",
+        false
+    ],
+    "game_types": [
+        "Slots",
+        "Scratch Cards",
+        "Instant Win Games"
+    ],
+    "technical_specs": {
+        "max_concurrent_sessions": 2000,
+        "session_timeout_minutes": 60,
+        "supports_https": true
+    },
+    "contacts": [
+        {
+          "name": "Yann Bautista",
+          "position": "Commercial Director & Founder",
+          "email": "sales@peterandsonsgames.com"
+        },
+        {
+          "name": "Lauryn Duncan",
+          "position": "Head of Sales & Marketing",
+          "email": "sales@peterandsonsgames.com"
+        }
+      ]
+},
+{
+    "type": "inout",
+    "name": "InOut",
+    "description": "InOut Games is a licensed B2B provider focused on crash-games, provably-fair mechanics and small-cycle betting formats. Their portfolio emphasizes high engagement, localization.",
+    "full_description": "We provide unique gamified products using cutting-edge technologies. Your platform with our games will be the best. Become the go-to solution for web and mobile apps, just as numerous founders, startups, and agencies have. Enjoy multilingual casino games with swift integration, enhancing your gaming experience globally",
+    "title": "Take Your Gaming Business to the Next Level",
+    "website": "https://inout.com/",
+    "logo": "/assets/providers/inout.png",
+    "pdf_path": "/assets/providers/pdf/InOut_Intro.pdf",
+    "id": 4,
+    "rating": 0,
+    "review_count": 0,
+    "reviews": [
+        {
+          "rating": 5,
+          "review": "Their core portfolio features high-engagement arcade-style games like Chicken Road, Plinko AZTEC, and Twist. These are highly sought after by operators looking for content that guarantees differentiation from standard slots and table games."
+        },
+        {
+          "rating": 4,
+          "review": "Promises quick integration with simple, documented API protocols. This is critical for new platforms or startups who require minimal development overhead to go live."
+        },
+        {
+          "rating": 5,
+          "review": "Explicitly focuses on building retention and return mechanics into their games, aiming for a high average player Lifetime Value (LTV) of 12 months."
+        },
+        {
+          "rating": 5,
+          "review": "Offers a streamlined, contemporary onboarding system and exclusive access to game demos during the process, simplifying the setup phase for new partners."
+        }
+      ],
+    "existing_count": 12,
+    "can_add_more": true,
+    "has_engine": false,
+    "required_credentials": [
+        "api_url",
+        "operator_id",
+        "api_token"
+    ],
+    "supported_features": [
+        "demo_mode",
+        "real_money",
+        "campaigns",
+        "free_spins",
+        "tournaments",
+        "mobile_optimized",
+        "desktop",
+        "multi_language"
+    ],
+    "supported_currencies": [
+        "USD",
+        "EUR",
+        "GBP",
+        "SEK",
+        "NOK"
+    ],
+    "supported_languages": [
+        "en",
+        "de",
+        "es",
+        "fr",
+        "it",
+        "sv",
+        false
+    ],
+    "game_types": [
+        "Gamified Products"
+    ],
+    "technical_specs": {
+        "max_concurrent_sessions": 2000,
+        "session_timeout_minutes": 60,
+        "supports_https": true
+    },
+    "contacts": [
+        {
+          "name": "General Contact",
+          "position": "General Contact",
+          "email": "partners@inout.global"
+        }
+      ]
+},
+{
+    "type": "amigo_gaming",
+    "name": "Amigo Gaming",
+    "description": "Amigo Gaming is a Barcelona-based online slot developer known for its vibrant designs, engaging mechanics, and strong mobile performance. ",
+    "full_description": "Amigo Gaming is a leading developer and supplier of innovative and unique online slots, offering a distinctive style of graphics and engaging features that set them apart in the iGaming market. Based in Barcelona, Amigo Gaming's international team is dedicated to developing versatile online casino slots that appeal to different segments of players across global markets, delivering high-quality gaming experiences.\n\nOur slots are developed with a focus on vertical screens for optimized gameplay on the go. Designed for smartphones, tablets, and desktops, our slots deliver a flawless experience that enhances user engagement and satisfaction. With innovative concepts and strong themes, our online slots are designed for maximum entertainment. Our slots are based on cutting-edge underlying technologies, including HTML5, which allow seamless and immersive gaming experience on all devices.",
+    "title": "Welcome to Amigo Gaming",
+    "website": "https://amigogaming.cloud",
+    "logo": "/assets/providers/amigo-gaming.png",
+    "pdf_path": "",
+    "id": 2,
+    "existing_count": 0,
+    "rating": 0,
+    "review_count": 0,
+    "can_add_more": true,
+    "has_engine": true,
+    "required_credentials": [
+      "secure_login",
+      "style_name",
+      "secret_key",
+      "seamless_endpoint"
+    ],
+    "supported_features": [
+      "demo_mode",
+      "real_money",
+      "free_rounds_bonus",
+      "jackpots",
+      "campaigns",
+      "mobile_optimized",
+      "desktop",
+      "game_history",
+      "data_feeds"
+    ],
+    "supported_currencies": [
+      "USD",
+      "EUR",
+      "GBP",
+      "CAD",
+      "AUD",
+      "BRL",
+      "JPY",
+      "RUB",
+      "INR",
+      "CNY"
+    ],
+    "supported_languages": [
+      "en",
+      "de",
+      "es",
+      "fr",
+      "it",
+      "pt",
+      "ru",
+      "zh",
+      "ja",
+      "pl",
+      "tr"
+    ],
+    "game_types": [
+      "Unique Online Slot Games"
+    ],
+    "technical_specs": {
+      "max_concurrent_sessions": 50000,
+      "session_timeout_minutes": 30,
+      "supports_https": true,
+      "ip_whitelist_required": true,
+      "api_version": "v1.5",
+      "integration_type": "seamless_wallet",
+      "hash_algorithm": "MD5",
+      "authentication_method": "hash_signature"
+    },
+    "api_endpoints": {
+      "game_url": "https://{game_server_domain}/api/sessions/seamless/amigo/game/url",
+      "get_casino_games": "https://{game_server_domain}/api/seamless/amigo/IntegrationService/v3/http/CasinoGameAPI/getCasinoGames",
+      "free_rounds_create": "https://{game_server_domain}/api/seamless/amigo/IntegrationService/v3/http/FreeRoundsBonusAPI/v2/bonus/create",
+      "history": "https://{game_server_domain}/api/seamless/amigo/IntegrationService/v3/http/HistoryAPI/GetRoundStatus"
+    },
+    "callback_methods": [
+      "authenticate",
+      "balance",
+      "bet",
+      "result",
+      "bonusWin",
+      "jackpotWin",
+      "refund",
+      "sessionExpired"
+    ],
+    "contacts": [
+        {
+          "name": "Gerard Busom",
+          "position": "Senior Account Manager",
+          "email": "gerard@amigogaming.email"
+        },
+        {
+          "name": "Eva Miaus",
+          "position": "Partnerships Manager",
+          "email": "eva@amigogaming.email"
+        },
+        {
+          "name": "Tetiana Lukiianiuk",
+          "position": "Head of Account Management",
+          "email": "tetiana@amigogaming.email"
+        }
+      ]
+  },
+  {
+    "type": "elbet",
+    "name": "Elbet",
+    "description": "Elbet is a tech-driven gaming content provider, founded in Belgrade in 2002, delivering virtual games, instant-win and slot content for operators globally.",
+    "full_description": "We specialize in delivering innovative and engaging games tailored for sports betting and online casino operators. Our extensive portfolio of high-quality content ensures a thrilling and immersive gaming experience for players. Explore Elbet’s top-tier online casino games. From thrilling Virtual Games and classic Slots to quick Instant Win games, we offer unmatched quality and excitement. Discover your next favorite game today!\n\nElbet, established in Belgrade, Serbia in 2002, is a premier technology company specializing in the development of cutting-edge software solutions for the gaming industry. Our comprehensive portfolio of virtual games encompasses number games, virtual sports, and virtual casino games, demonstrating our commitment to innovation and excellence.We proudly collaborate with over 150 operators across three continents, including partnerships with four state lotteries, underscoring our global reach and trusted expertise.",
+    "title": "The Industry-Leading Live casino software and services provider",
+    "website": "https://elbet.com",
+    "logo": "/assets/providers/elbet.png",
+    "pdf_path": "",
+    "id": 3,
+    "existing_count": 0,
+    "rating": 0,
+    "review_count": 0,
+    "reviews": [
+        {
+          "rating": 5,
+          "review": "Their games are of exceptional quality, packed with interesting features that the players love. This partnership allows the operators... to provide Elbet's outstanding content to a wider audience."
+        },
+        {
+          "rating": 4,
+          "review": "The advantage of their product results in an undoubted standout among similar games and stems from their innovative approach, attention to detail and commitment to excellence. The positive outcome of the user experience has positioned the game highly in the overall game portfolio."
+        },
+        {
+          "rating": 5,
+          "review": "Their commitment to excellence, innovation, and providing high-quality virtual game content has been instrumental in enhancing our offerings to our customers."
+        }
+      ],
+    "can_add_more": true,
+    "has_engine": true,
+    "required_credentials": [
+      "company_id",
+      "api_endpoint",
+      "api_key"
+    ],
+    "supported_features": [
+      "demo_mode",
+      "real_money",
+      "jackpots",
+      "crash_games",
+      "mobile_optimized",
+      "desktop",
+      "game_history",
+      "real_time_jackpots"
+    ],
+    "supported_currencies": [
+      "USD",
+      "EUR",
+      "GBP",
+      "CAD",
+      "AUD",
+      "BTC",
+      "ETH",
+      "USDT",
+      "LTC",
+      "DOGE",
+      "BRL",
+      "RUB",
+      "TRY"
+    ],
+    "supported_languages": [
+      "en",
+      "de",
+      "es",
+      "fr",
+      "it",
+      "pt",
+      "ru",
+      "zh",
+      "ar",
+      "bg",
+      "el",
+      "he",
+      "hi",
+      "hu",
+      "mk",
+      "pl",
+      "ro",
+      "sr",
+      "sv",
+      "tr",
+      "uk"
+    ],
+    "game_types": [
+      "Virtual Games",
+      "Instant Win Games",
+      "Slot Games"
+    ],
+    "technical_specs": {
+      "max_concurrent_sessions": 25000,
+      "session_timeout_minutes": 20,
+      "supports_https": true,
+      "ip_whitelist_required": true,
+      "api_version": "v3.3",
+      "integration_type": "ciws",
+      "authentication_method": "basic_or_api_key",
+      "supports_crypto": true
+    },
+    "api_endpoints": {
+      "game_list": "https://api.public.elbet.com/GameList",
+      "get_jackpots": "https://api.public.elbet.com/GetJackpots/{Currency}/{CompanyID}",
+      "get_fastballs_jackpots": "https://api.public.elbet.com/GetFastBallsJackpots/{Currency}/{CompanyID}",
+      "get_game_info": "https://api.public.elbet.com/GetGameInfo/{GameId}/{TicketID}",
+      "launcher_dev": "https://launcher.elbetdev.com/",
+      "launcher_prod": "https://launcher.elbet.com/"
+    },
+    "callback_methods": [
+      "GetUserInfo",
+      "GetBalance",
+      "Bet",
+      "Win",
+      "CancelBet"
+    ],
+    "available_games": [
+      {
+        "id": 101,
+        "name": "Rocketman"
+      },
+      {
+        "id": 102,
+        "name": "Fast Balls"
+      },
+      {
+        "id": 103,
+        "name": "Gold Mines"
+      },
+      {
+        "id": 104,
+        "name": "Raccoon Rush"
+      },
+      {
+        "id": 105,
+        "name": "Soccer Rush"
+      },
+      {
+        "id": 111,
+        "name": "Soaring"
+      },
+      {
+        "id": 119,
+        "name": "TouchDown Rush"
+      },
+      {
+        "id": 121,
+        "name": "Plinko"
+      },
+      {
+        "id": 123,
+        "name": "Basketball Rush"
+      },
+      {
+        "id": 200,
+        "name": "Book of the Lost Continent"
+      },
+      {
+        "id": 201,
+        "name": "Spicy 7s"
+      },
+      {
+        "id": 202,
+        "name": "Cleopatra's Mystery Smile"
+      }
+    ],
+    "whitelist_ips": [
+      "93.93.195.94",
+      "3.68.123.203",
+      "35.157.114.62",
+      "18.195.74.156",
+      "3.64.221.37",
+      "52.59.194.112"
+    ],
+    "contacts": [
+        {
+          "name": "Marko Janjić",
+          "position": "Business Development Manager",
+          "email": "mjanjic@elbet.com"
+        },
+        {
+          "name": "Patrick Udu",
+          "position": "Business Development Manager (Africa)",
+          "email": "patrick.udu@elbet.com"
+        }
+      ]
+  },
+  {
+    "type": "pragmatic_play",
+    "name": "Pragmatic Play",
+    "description": "Pragmatic Play is a major multi-product supplier (slots, live casino, bingo, virtual sports, sportsbook) available via a single API. With more than 500 in-house games.",
+    "full_description": "Led by CEO Julian Jarvis from its headquarters in Gibraltar, Pragmatic Play is a leading supplier of player-favourite content to the most successful operator brands in the industry. Powering up new possibilities of play through a single API, we offer a multi-product portfolio of award-winning slots, live casino, bingo, virtual sports, sportsbook and more, available in all major regulated markets, languages and currencies. Driven by our commitment to craft immersive experiences and responsible thrills, we supply games that players love time and time again. Pragmatic Play is owned by a private group of investors led by Veridian (Gibraltar) Limited.\n\nPragmatic Play is a B2B provider of digital casino games. Although we are not gaming operators and therefore have minimal contact with end-users, responsible gaming forms an important part of our Company’s ethos. We encourage a socially responsible attitude to gaming within our industry, both with our licensees and within our own company, as we proactively seek to avoid any gaming-related issues while providing our services both fairly and legally. Please visit begambleaware.org for more information.",
+    "title": "We are Pragmatic Play",
+    "website": "https://pragmaticplay.com",
+    "logo": "/assets/providers/pragmatic-play.png",
+    "pdf_path": "",
+    "id": 4,
+    "existing_count": 0,
+    "rating": 0,
+    "review_count": 0,
+    "reviews": [
+      {
+        "rating": 5,
+        "review": "Their 'Your Favourite Every Time' approach, delivered through a single API, is a major selling point for operators seeking simplified integration across multiple verticals (Slots, Live Casino, Sportsbook, Bingo)"
+      },
+      {
+        "rating": 4,
+        "review": "The slot vertical is the foundation, featuring over 500 unique titles known for high volatility and strong franchise branding (e.g., Big Bass Bonanza, Gates of Olympus)."
+      },
+      {
+        "rating": 5,
+        "review": "They broadcast from a newly constructed, high-tech studio, offering classic games (Baccarat, Roulette, Blackjack) alongside modern game shows."
+      },
+      {
+        "rating": 5,
+        "review": "Beyond their core offerings, they provide comprehensive Bingo, Virtual Sports, and a Sportsbook. Their Drops & Wins promotional tool is highly valued by operators for driving retention and cross-selling."
+      }
+    ],
+    "can_add_more": true,
+    "has_engine": true,
+    "required_credentials": [
+      "secure_login",
+      "provider_id",
+      "secret_key",
+      "api_endpoint"
+    ],
+    "contacts": [
+        {
+          "name": "Julian Jarvis",
+          "position": "Chief Executive Officer",
+          "email": "julian.jarvis@pragmaticplay.com"
+        },
+        {
+          "name": "Sales Team",
+          "position": "B2B Sales",
+          "email": "sales@pragmaticplay.com"
+        }
+      ],
+    "supported_features": [
+      "demo_mode",
+      "real_money",
+      "free_spins",
+      "tournaments",
+      "jackpots",
+      "buy_feature",
+      "mobile_optimized",
+      "desktop",
+      "live_casino",
+      "bingo",
+      "virtual_sports",
+      "game_history",
+      "reality_check",
+      "responsible_gaming"
+    ],
+    "supported_currencies": [
+      "USD",
+      "EUR",
+      "GBP",
+      "CAD",
+      "AUD",
+      "BRL",
+      "JPY",
+      "RUB",
+      "INR",
+      "CNY",
+      "MXN",
+      "ARS",
+      "CLP",
+      "PEN",
+      "SEK",
+      "NOK",
+      "DKK",
+      "PLN",
+      "RON",
+      "BGN",
+      "HUF",
+      "CZK",
+      "TRY"
+    ],
+    "supported_languages": [
+      "en",
+      "de",
+      "es",
+      "fr",
+      "it",
+      "pt",
+      "ru",
+      "zh",
+      "ja",
+      "ko",
+      "pl",
+      "tr",
+      "sv",
+      "no",
+      "da",
+      "fi",
+      "ro",
+      "bg",
+      "el",
+      "hu",
+      "cs",
+      "sk",
+      "nl",
+      "ar",
+      "hi",
+      "th",
+      "vi",
+      "id"
+    ],
+    "game_types": [
+      "Slots",
+      "Arcade",
+      "Live Casino",
+      "Drops & Wins",
+      "Jackpots",
+      "Crash Games",
+      "Other RNG",
+      "Sportsbook",
+      "Bingo",
+      "Virtual Sports"
+    ],
+    "technical_specs": {
+      "max_concurrent_sessions": 500000,
+      "session_timeout_minutes": 30,
+      "supports_https": true,
+      "ip_whitelist_required": true,
+      "api_version": "v3",
+      "integration_type": "seamless_wallet",
+      "hash_algorithm": "MD5",
+      "authentication_method": "hash_signature",
+      "supports_dbr_configuration": true,
+      "supports_bet_limits": true
+    },
+    "api_endpoints": {
+      "slots_api": "https://api.prerelease-env.biz/IntegrationService/v3/http/CasinoGameAPI",
+      "game_launch": "https://api.prerelease-env.biz/IntegrationService/v3/http/CasinoGameAPI/game/url/",
+      "bingo_api": "https://api-bingo.prerelease-env.biz/BingoIntegration/BingoGameAPI/",
+      "free_tickets_api": "https://api-bingo.prerelease-env.biz/BingoIntegration/FreeTicketsAPI/",
+      "data_feeds": "https://api.prerelease-env.biz/IntegrationService/v3/http/SystemAPI/environments",
+      "backoffice": "https://backoffice-global.pragmaticplay.net/pre/"
+    },
+    "callback_methods": [
+      "authenticate",
+      "balance",
+      "bet",
+      "win",
+      "refund",
+      "sessionEnd"
+    ],
+    "product_lines": [
+      "slots",
+      "live_casino",
+      "bingo",
+      "virtual_sports"
+    ],
+    "whitelist_ips": {
+      "production": [
+        "162.55.138.242",
+        "162.55.108.246",
+        "167.235.168.82",
+        "157.90.81.84"
+      ],
+      "office": [
+        "195.69.223.146",
+        "95.211.155.196",
+        "195.69.221.202",
+        "176.112.120.11",
+        "176.112.120.12",
+        "185.8.155.162",
+        "5.2.130.103",
+        "84.1.113.218",
+        "81.196.86.120"
+      ],
+      "bingo_staging": [
+        "142.132.252.230",
+        "176.9.24.73"
+      ]
+    },
+    "dbr_settings": {
+      "arcade": "95.9-96.9",
+      "fat_panda": "95.9-96.9",
+      "common": "95.9-96.9"
+    }
+  },
+  {
+    "type": "creed_roomz",
+    "name": "CreedRoomz",
+    "description": "CreedRoomz specialises in live-casino software and services: live dealer games, dedicated tables & studios, a “Land to Live” online-to-offline model.",
+    "full_description": "At CreedRoomz, we are a leading live casino software provider utilising innovative technologies across various aspects of the gaming industry, including gameplay automation, advanced game development, studio setup and more. Our live casino software API seamlessly integrates with your existing platform, while our 'Land to Live' technology offers the fastest path to modernising your business. We offer an ideal balance of price and quality, fully compliant with most legal regulations in addition to products that can be fully customised to meet each partner's specific needs.",
+    "title": "The Industry-Leading Live casino software and services provider",
+    "website": "https://www.creedroomz.com/",
+    "logo": "/assets/providers/creedroomz.png",
+    "pdf_path": "",
+    "id": 4,
+    "existing_count": 0,
+    "rating": 0,
+    "review_count": 0,
+    "reviews": [
+        {
+          "rating": 5,
+          "review": "The Live Casino API integration was seamless and provided us with an immediate, high-quality game portfolio. The value-to-quality ratio is unmatched for speed-to-market."
+        },
+        {
+          "rating": 4,
+          "review": "We utilized the Dedicated Tables solution for branding. The studio design process was collaborative, and the final look successfully boosted our brand recognition, though the initial setup timeline was tight."
+        },
+        {
+          "rating": 5,
+          "review": "Implementing the Crypto Casino solution gave us instant access to a new market segment. The dual-wallet functionality and secure infrastructure made the transition surprisingly smooth."
+        },
+        {
+          "rating": 4,
+          "review": "Our partnership with CreedRoomz has been an important step in our growth, which brought innovative games and features that increased player's engagement and enrich our platform. Their team is really professional, responsive and friendly."
+        }
+      ],
+    "can_add_more": true,
+    "has_engine": true,
+    "required_credentials": [
+      "secure_login",
+      "provider_id",
+      "secret_key",
+      "api_endpoint"
+    ],
+    "contacts": [
+        {
+          "name": "Armen Mnaskanian",
+          "position": "Head of Sales",
+          "email": "armen.mnaskanian@creedroomz.com"
+        },
+        {
+          "name": "Lusine Voskanyan",
+          "position": "Business Development Manager",
+          "email": "lusine.voskanyan@creedroomz.com"
+        },
+        {
+          "name": "Jenny Jones",
+          "position": "Business Development Manager",
+          "email": "jenny.jones@creedroomz.com"
+        },
+        {
+          "name": "Mark Mandap",
+          "position": "Business Development Manager",
+          "email": "mark.mandap@creedroomz.com"
+        }
+      ],
+    "supported_features": [
+      "demo_mode",
+      "real_money",
+      "free_spins",
+      "tournaments",
+      "jackpots",
+      "buy_feature",
+      "mobile_optimized",
+      "desktop",
+      "live_casino",
+      "bingo",
+      "virtual_sports",
+      "game_history",
+      "reality_check",
+      "responsible_gaming"
+    ],
+    "supported_currencies": [
+      "USD",
+      "EUR",
+      "GBP",
+      "CAD",
+      "AUD",
+      "BRL",
+      "JPY",
+      "RUB",
+      "INR",
+      "CNY",
+      "MXN",
+      "ARS",
+      "CLP",
+      "PEN",
+      "SEK",
+      "NOK",
+      "DKK",
+      "PLN",
+      "RON",
+      "BGN",
+      "HUF",
+      "CZK",
+      "TRY"
+    ],
+    "supported_languages": [
+      "en",
+      "de",
+      "es",
+      "fr",
+      "it",
+      "pt",
+      "ru",
+      "zh",
+      "ja",
+      "ko",
+      "pl",
+      "tr",
+      "sv",
+      "no",
+      "da",
+      "fi",
+      "ro",
+      "bg",
+      "el",
+      "hu",
+      "cs",
+      "sk",
+      "nl",
+      "ar",
+      "hi",
+      "th",
+      "vi",
+      "id"
+    ],
+    "game_types": [
+      "Live Casino",
+      "Aurum Roulette",
+      "Roulette",
+      "Deluxe Roulette",
+      "Richie Fruits Roulette",
+      "Richie Wheel",
+      "Auto Roulette",
+      "Swift Roulette",
+      "Blackjack",
+      "Cashout Blackjack",
+      "Speed Blackjack",
+      "Switch Blackjack",
+      "Freebet Blackjack",
+      "Baccarat",
+      "No Commission Baccarat",
+      "Speed Baccarat",
+      "Sic Bo",
+      "Dragon Tiger",
+      "Andar Bahar",
+      "Teen Patti",
+      "Russian Poker",
+      "Bet On Poker",
+      "Casino Hold'em",
+      "Keno"
+    ],
+    "technical_specs": {
+      "max_concurrent_sessions": 500000,
+      "session_timeout_minutes": 30,
+      "supports_https": true,
+      "ip_whitelist_required": true,
+      "api_version": "v3",
+      "integration_type": "seamless_wallet",
+      "hash_algorithm": "MD5",
+      "authentication_method": "hash_signature",
+      "supports_dbr_configuration": true,
+      "supports_bet_limits": true
+    },
+    "api_endpoints": {
+      "slots_api": "https://api.prerelease-env.biz/IntegrationService/v3/http/CasinoGameAPI",
+      "game_launch": "https://api.prerelease-env.biz/IntegrationService/v3/http/CasinoGameAPI/game/url/",
+      "bingo_api": "https://api-bingo.prerelease-env.biz/BingoIntegration/BingoGameAPI/",
+      "free_tickets_api": "https://api-bingo.prerelease-env.biz/BingoIntegration/FreeTicketsAPI/",
+      "data_feeds": "https://api.prerelease-env.biz/IntegrationService/v3/http/SystemAPI/environments",
+      "backoffice": "https://backoffice-global.pragmaticplay.net/pre/"
+    },
+    "callback_methods": [
+      "authenticate",
+      "balance",
+      "bet",
+      "win",
+      "refund",
+      "sessionEnd"
+    ],
+    "product_lines": [
+      "slots",
+      "live_casino",
+      "bingo",
+      "virtual_sports"
+    ],
+    "whitelist_ips": {
+      "production": [
+        "162.55.138.242",
+        "162.55.108.246",
+        "167.235.168.82",
+        "157.90.81.84"
+      ],
+      "office": [
+        "195.69.223.146",
+        "95.211.155.196",
+        "195.69.221.202",
+        "176.112.120.11",
+        "176.112.120.12",
+        "185.8.155.162",
+        "5.2.130.103",
+        "84.1.113.218",
+        "81.196.86.120"
+      ],
+      "bingo_staging": [
+        "142.132.252.230",
+        "176.9.24.73"
+      ]
+    },
+    "dbr_settings": {
+      "arcade": "95.9-96.9",
+      "fat_panda": "95.9-96.9",
+      "common": "95.9-96.9"
+    }
+  }
+]

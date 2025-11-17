@@ -1,0 +1,884 @@
+[
+  {
+    "type": "twilio",
+    "id": 1,
+    "name": "Twilio",
+    "description": "Twilio is a leading cloud communications platform that provides APIs for voice, SMS, and video communications. It offers programmable voice solutions with global coverage and advanced features for contact centers.",
+    "website": "https://www.twilio.com",
+    "logo": "twilio_logo",
+    "pdf_path": "",
+    "enabled": false,
+    "default": false,
+    "profiles": [],
+    "default_profile": null,
+    "rating": 0,
+    "review_count": 0,
+    "existing_count": 0,
+    "can_add_more": true,
+    "has_engine": true,
+    "required_credentials": [
+      "account_sid",
+      "auth_token",
+      "api_key",
+      "api_secret"
+    ],
+    "supported_features": [
+      "outbound_calls",
+      "inbound_calls",
+      "call_recording",
+      "call_forwarding",
+      "ivr",
+      "sms",
+      "mms",
+      "video_calls",
+      "voicemail",
+      "call_analytics",
+      "real_time_monitoring",
+      "call_queue",
+      "conference_calls",
+      "click_to_call",
+      "webhooks"
+    ],
+    "supported_regions": [
+      "North America",
+      "Europe",
+      "Asia Pacific",
+      "Latin America",
+      "Middle East",
+      "Africa"
+    ],
+    "supported_languages": [
+      "en",
+      "es",
+      "fr",
+      "de",
+      "it",
+      "pt",
+      "ja",
+      "ko",
+      "zh"
+    ],
+    "technical_specs": {
+      "max_concurrent_calls": 10000,
+      "call_timeout_minutes": 240,
+      "supports_https": true,
+      "ip_whitelist_required": false,
+      "api_version": "2010-04-01",
+      "integration_type": "rest_api",
+      "authentication_method": "basic_auth"
+    },
+    "api_endpoints": {
+      "base_url": "https://api.twilio.com/2010-04-01",
+      "voice": "/Accounts/{AccountSid}/Calls",
+      "sms": "/Accounts/{AccountSid}/Messages",
+      "recordings": "/Accounts/{AccountSid}/Recordings"
+    },
+    "pricing": {
+      "type": "pay_as_you_go",
+      "starting_price": "$0.0085 per minute"
+    }
+  },
+  {
+    "type": "coperato",
+    "id": 2,
+    "name": "Coperato",
+    "description": "Coperato is a comprehensive contact center solution designed for financial services and trading companies. It provides advanced call handling, CRM integration, and compliance features tailored for the iGaming and Forex industries.",
+    "website": "https://www.coperato.com",
+    "logo": "coperato_logo",
+    "pdf_path": "",
+    "enabled": true,
+    "default": false,
+    "profiles": [
+      {
+        "id": 42,
+        "company_id": 1,
+        "name": "1",
+        "provider_type": "coperato",
+        "settings": {},
+        "enabled": true,
+        "is_default": false,
+        "description": null
+      },
+      {
+        "id": 43,
+        "company_id": 1,
+        "name": "Test",
+        "provider_type": "coperato",
+        "settings": {},
+        "enabled": true,
+        "is_default": false,
+        "description": null
+      },
+      {
+        "id": 44,
+        "company_id": 1,
+        "name": "test111",
+        "provider_type": "coperato",
+        "settings": {},
+        "enabled": true,
+        "is_default": false,
+        "description": null
+      }
+    ],
+    "default_profile": null,
+    "rating": 0,
+    "review_count": 0,
+    "existing_count": 3,
+    "can_add_more": true,
+    "has_engine": true,
+    "required_credentials": [
+      "api_key",
+      "api_secret",
+      "domain",
+      "extension"
+    ],
+    "supported_features": [
+      "outbound_calls",
+      "inbound_calls",
+      "call_recording",
+      "call_monitoring",
+      "call_whisper",
+      "call_barge",
+      "predictive_dialer",
+      "power_dialer",
+      "crm_integration",
+      "call_scripts",
+      "compliance_recording",
+      "quality_assurance",
+      "real_time_dashboard",
+      "agent_performance",
+      "call_disposition"
+    ],
+    "supported_regions": [
+      "Europe",
+      "Asia Pacific",
+      "Middle East"
+    ],
+    "supported_languages": [
+      "en",
+      "ru",
+      "es",
+      "de",
+      "ar",
+      "zh"
+    ],
+    "technical_specs": {
+      "max_concurrent_calls": 5000,
+      "call_timeout_minutes": 120,
+      "supports_https": true,
+      "ip_whitelist_required": true,
+      "api_version": "v2",
+      "integration_type": "rest_api",
+      "authentication_method": "api_key"
+    },
+    "api_endpoints": {
+      "base_url": "https://api.coperato.com/v2",
+      "make_call": "/calls/initiate",
+      "call_status": "/calls/{callId}/status",
+      "recordings": "/recordings/{callId}"
+    },
+    "pricing": {
+      "type": "subscription",
+      "starting_price": "$50 per agent/month"
+    }
+  },
+  {
+    "type": "voiso",
+    "id": 3,
+    "name": "Voiso",
+    "description": "Voiso is a cloud-based contact center platform that delivers omnichannel customer engagement solutions. It offers advanced routing, real-time analytics, and AI-powered features for modern contact centers.",
+    "website": "https://www.voiso.com",
+    "logo": "voiso_logo",
+    "pdf_path": "/assets/providers/pdf/voiso.pdf",
+    "enabled": true,
+    "default": false,
+    "profiles": [
+      {
+        "id": 37,
+        "company_id": 1,
+        "name": "test1111",
+        "provider_type": "voiso",
+        "settings": {
+          "api_key": "",
+          "sms_from": [],
+          "agent_ids": {
+            "1": "",
+            "9": "",
+            "10": "",
+            "23": "",
+            "24": "",
+            "26": "",
+            "27": "",
+            "28": "",
+            "29": "",
+            "42": "",
+            "43": "",
+            "44": "",
+            "52": "",
+            "54": "",
+            "57": "",
+            "58": "",
+            "59": "",
+            "60": "",
+            "61": "",
+            "73": "",
+            "74": "",
+            "75": "",
+            "79": "",
+            "83": "",
+            "84": "",
+            "85": "",
+            "88": "",
+            "89": "",
+            "92": "",
+            "93": "",
+            "94": "",
+            "95": "",
+            "96": "",
+            "97": "",
+            "98": "",
+            "99": "",
+            "100": "",
+            "101": "",
+            "102": "",
+            "103": "",
+            "104": "",
+            "105": "",
+            "107": "",
+            "111": "",
+            "113": "",
+            "115": ""
+          },
+          "server_url": ""
+        },
+        "enabled": true,
+        "is_default": false,
+        "description": null
+      }
+    ],
+    "default_profile": null,
+    "rating": 0,
+    "review_count": 0,
+    "existing_count": 1,
+    "can_add_more": true,
+    "has_engine": true,
+    "required_credentials": [
+      "api_key",
+      "server_url",
+      "client_id",
+      "client_secret"
+    ],
+    "supported_features": [
+      "outbound_calls",
+      "inbound_calls",
+      "omnichannel",
+      "sms",
+      "email",
+      "web_chat",
+      "whatsapp",
+      "call_recording",
+      "screen_recording",
+      "ivr",
+      "acd",
+      "predictive_dialer",
+      "preview_dialer",
+      "progressive_dialer",
+      "ai_voice_bot",
+      "sentiment_analysis",
+      "speech_analytics",
+      "real_time_monitoring",
+      "wallboards",
+      "callback_scheduling",
+      "crm_integration"
+    ],
+    "supported_regions": [
+      "Global"
+    ],
+    "supported_languages": [
+      "en",
+      "es",
+      "fr",
+      "de",
+      "it",
+      "pt",
+      "ru",
+      "pl",
+      "tr",
+      "ar",
+      "zh",
+      "ja"
+    ],
+    "technical_specs": {
+      "max_concurrent_calls": 15000,
+      "call_timeout_minutes": 180,
+      "supports_https": true,
+      "ip_whitelist_required": false,
+      "api_version": "v1",
+      "integration_type": "rest_api_websocket",
+      "authentication_method": "oauth2"
+    },
+    "api_endpoints": {
+      "base_url": "https://api.voiso.com/v1",
+      "calls": "/calls",
+      "agents": "/agents",
+      "recordings": "/recordings",
+      "analytics": "/analytics",
+      "webhooks": "/webhooks"
+    },
+    "pricing": {
+      "type": "subscription",
+      "starting_price": "$65 per agent/month"
+    }
+  },
+  {
+    "type": "cypbx",
+    "id": 4,
+    "name": "Cyprus BPX",
+    "description": "Cyprus BPX is a business phone exchange solution tailored for enterprises operating in the European and Mediterranean markets. It provides reliable VoIP services with advanced PBX features and multi-site connectivity.",
+    "website": "https://www.cyprusbpx.com",
+    "logo": "cypbx_logo",
+    "pdf_path": "",
+    "enabled": false,
+    "default": false,
+    "profiles": [],
+    "default_profile": null,
+    "rating": 0,
+    "review_count": 0,
+    "existing_count": 0,
+    "can_add_more": true,
+    "has_engine": true,
+    "required_credentials": [
+      "sip_username",
+      "sip_password",
+      "sip_domain",
+      "extension"
+    ],
+    "supported_features": [
+      "outbound_calls",
+      "inbound_calls",
+      "call_recording",
+      "call_transfer",
+      "call_forwarding",
+      "ivr",
+      "call_parking",
+      "voicemail",
+      "conference_calls",
+      "hot_desking",
+      "multi_site_connectivity",
+      "call_analytics",
+      "extension_management"
+    ],
+    "supported_regions": [
+      "Europe",
+      "Middle East",
+      "North Africa"
+    ],
+    "supported_languages": [
+      "en",
+      "el",
+      "tr",
+      "ru",
+      "ar"
+    ],
+    "technical_specs": {
+      "max_concurrent_calls": 2000,
+      "call_timeout_minutes": 120,
+      "supports_https": true,
+      "ip_whitelist_required": true,
+      "api_version": "v1",
+      "integration_type": "sip_rest_api",
+      "authentication_method": "sip_digest"
+    },
+    "api_endpoints": {
+      "base_url": "https://api.cyprusbpx.com/v1",
+      "extensions": "/extensions",
+      "calls": "/calls",
+      "recordings": "/recordings"
+    },
+    "pricing": {
+      "type": "subscription",
+      "starting_price": "$35 per extension/month"
+    }
+  },
+  {
+    "type": "squaretalk",
+    "id": 5,
+    "name": "Squaretalk",
+    "description": "Squaretalk provides cloud-based business communication solutions with a focus on simplicity and reliability. It offers VoIP services, virtual phone numbers, and contact center features for businesses of all sizes.",
+    "website": "https://www.squaretalk.com",
+    "logo": "squaretalk",
+    "pdf_path": "/assets/providers/pdf/squaretalk.pdf",
+    "enabled": true,
+    "default": false,
+    "profiles": [
+      {
+        "id": 39,
+        "company_id": 1,
+        "name": "ffff",
+        "provider_type": "squaretalk",
+        "settings": {},
+        "enabled": true,
+        "is_default": false,
+        "description": null
+      }
+    ],
+    "default_profile": null,
+    "rating": 0,
+    "review_count": 0,
+    "existing_count": 1,
+    "can_add_more": true,
+    "has_engine": true,
+    "required_credentials": [
+      "api_token",
+      "account_id",
+      "sip_username",
+      "sip_password"
+    ],
+    "supported_features": [
+      "outbound_calls",
+      "inbound_calls",
+      "call_recording",
+      "call_forwarding",
+      "ivr",
+      "voicemail",
+      "call_queues",
+      "ring_groups",
+      "time_based_routing",
+      "sms",
+      "call_analytics",
+      "mobile_app",
+      "desktop_app",
+      "crm_integration"
+    ],
+    "supported_regions": [
+      "Europe",
+      "North America",
+      "Asia Pacific"
+    ],
+    "supported_languages": [
+      "en",
+      "de",
+      "fr",
+      "es",
+      "it",
+      "nl"
+    ],
+    "technical_specs": {
+      "max_concurrent_calls": 3000,
+      "call_timeout_minutes": 120,
+      "supports_https": true,
+      "ip_whitelist_required": false,
+      "api_version": "v2",
+      "integration_type": "rest_api",
+      "authentication_method": "bearer_token"
+    },
+    "api_endpoints": {
+      "base_url": "https://api.squaretalk.com/v2",
+      "calls": "/calls",
+      "numbers": "/numbers",
+      "recordings": "/recordings",
+      "webhooks": "/webhooks"
+    },
+    "pricing": {
+      "type": "subscription",
+      "starting_price": "$25 per user/month"
+    }
+  },
+  {
+    "type": "commpeak",
+    "id": 6,
+    "name": "Commpeak",
+    "description": "Commpeak is a wholesale VoIP and SMS provider offering carrier-grade voice termination and origination services. It provides high-quality voice routes, SMS delivery, and advanced routing solutions for telecom operators and businesses.",
+    "website": "https://www.commpeak.com",
+    "logo": "commpeak",
+    "pdf_path": "",
+    "enabled": false,
+    "default": false,
+    "profiles": [],
+    "default_profile": null,
+    "rating": 0,
+    "review_count": 0,
+    "existing_count": 0,
+    "can_add_more": true,
+    "has_engine": true,
+    "required_credentials": [
+      "api_key",
+      "account_id",
+      "sip_trunk_username",
+      "sip_trunk_password"
+    ],
+    "supported_features": [
+      "voice_termination",
+      "voice_origination",
+      "sms_delivery",
+      "number_lookup",
+      "cli_validation",
+      "least_cost_routing",
+      "quality_monitoring",
+      "fraud_detection",
+      "real_time_cdr",
+      "wholesale_pricing",
+      "dedicated_routes",
+      "tier_1_carriers"
+    ],
+    "supported_regions": [
+      "Global"
+    ],
+    "supported_languages": [
+      "en",
+      "es",
+      "ru"
+    ],
+    "technical_specs": {
+      "max_concurrent_calls": 50000,
+      "call_timeout_minutes": 240,
+      "supports_https": true,
+      "ip_whitelist_required": true,
+      "api_version": "v1",
+      "integration_type": "sip_trunk_rest_api",
+      "authentication_method": "api_key"
+    },
+    "api_endpoints": {
+      "base_url": "https://api.commpeak.com/v1",
+      "rates": "/rates",
+      "cdr": "/cdr",
+      "sms": "/sms",
+      "balance": "/balance"
+    },
+    "pricing": {
+      "type": "wholesale",
+      "starting_price": "Custom pricing"
+    }
+  },
+  {
+    "type": "mmdsmart",
+    "id": 7,
+    "name": "MMDsmart",
+    "description": "MMDsmart is an intelligent contact center solution that combines voice, chat, and automation capabilities. It offers AI-powered features, omnichannel communication, and advanced analytics for modern customer service operations.",
+    "website": "https://www.mmdsmart.com",
+    "logo": "mmdsmart",
+    "pdf_path": "",
+    "enabled": true,
+    "default": false,
+    "profiles": [
+      {
+        "id": 46,
+        "company_id": 1,
+        "name": "MMD",
+        "provider_type": "mmdsmart",
+        "settings": {},
+        "enabled": true,
+        "is_default": false,
+        "description": null
+      }
+    ],
+    "default_profile": null,
+    "rating": 0,
+    "review_count": 0,
+    "existing_count": 1,
+    "can_add_more": true,
+    "has_engine": true,
+    "required_credentials": [
+      "api_key",
+      "workspace_id",
+      "integration_token"
+    ],
+    "supported_features": [
+      "outbound_calls",
+      "inbound_calls",
+      "omnichannel",
+      "web_chat",
+      "email",
+      "social_media",
+      "whatsapp",
+      "telegram",
+      "ai_chatbot",
+      "call_recording",
+      "screen_recording",
+      "predictive_dialer",
+      "ivr",
+      "acd",
+      "skill_based_routing",
+      "sentiment_analysis",
+      "real_time_transcription",
+      "quality_management",
+      "workforce_management",
+      "gamification"
+    ],
+    "supported_regions": [
+      "Europe",
+      "Asia Pacific",
+      "North America"
+    ],
+    "supported_languages": [
+      "en",
+      "ru",
+      "uk",
+      "pl",
+      "de",
+      "es",
+      "fr"
+    ],
+    "technical_specs": {
+      "max_concurrent_calls": 8000,
+      "call_timeout_minutes": 180,
+      "supports_https": true,
+      "ip_whitelist_required": false,
+      "api_version": "v3",
+      "integration_type": "rest_api_websocket",
+      "authentication_method": "jwt"
+    },
+    "api_endpoints": {
+      "base_url": "https://api.mmdsmart.com/v3",
+      "calls": "/calls",
+      "channels": "/channels",
+      "agents": "/agents",
+      "analytics": "/analytics",
+      "ai_insights": "/ai/insights"
+    },
+    "pricing": {
+      "type": "subscription",
+      "starting_price": "$55 per agent/month"
+    }
+  },
+  {
+    "type": "prime_voip",
+    "id": 8,
+    "name": "Prime Voip",
+    "description": "Prime Voip delivers premium VoIP services with enterprise-grade reliability and crystal-clear voice quality. It specializes in providing scalable communication solutions for call centers and businesses with high-volume calling needs.",
+    "website": "https://www.primevoip.com",
+    "logo": "prime_voip",
+    "pdf_path": "",
+    "enabled": true,
+    "default": false,
+    "profiles": [
+      {
+        "id": 41,
+        "company_id": 1,
+        "name": "Test 123",
+        "provider_type": "prime_voip",
+        "settings": {},
+        "enabled": true,
+        "is_default": false,
+        "description": null
+      }
+    ],
+    "default_profile": null,
+    "rating": 0,
+    "review_count": 0,
+    "existing_count": 1,
+    "can_add_more": true,
+    "has_engine": true,
+    "required_credentials": [
+      "api_key",
+      "account_number",
+      "sip_credentials",
+      "domain"
+    ],
+    "supported_features": [
+      "outbound_calls",
+      "inbound_calls",
+      "did_numbers",
+      "toll_free_numbers",
+      "call_recording",
+      "call_forwarding",
+      "failover",
+      "load_balancing",
+      "ivr",
+      "auto_attendant",
+      "call_queues",
+      "voicemail_to_email",
+      "sms",
+      "fax",
+      "number_porting",
+      "emergency_calling",
+      "hd_voice",
+      "call_analytics"
+    ],
+    "supported_regions": [
+      "North America",
+      "Europe",
+      "Asia Pacific"
+    ],
+    "supported_languages": [
+      "en",
+      "es",
+      "fr",
+      "de"
+    ],
+    "technical_specs": {
+      "max_concurrent_calls": 20000,
+      "call_timeout_minutes": 240,
+      "supports_https": true,
+      "ip_whitelist_required": true,
+      "api_version": "v2",
+      "integration_type": "sip_trunk_rest_api",
+      "authentication_method": "api_key_basic_auth",
+      "codec_support": ["G.711", "G.722", "G.729", "Opus"]
+    },
+    "api_endpoints": {
+      "base_url": "https://api.primevoip.com/v2",
+      "origination": "/calls/originate",
+      "cdr": "/reports/cdr",
+      "numbers": "/did/numbers",
+      "recordings": "/recordings"
+    },
+    "pricing": {
+      "type": "pay_as_you_go",
+      "starting_price": "$0.006 per minute"
+    }
+  },
+  {
+    "type": "voicespin",
+    "id": 9,
+    "name": "Voicespin",
+    "description": "Voicespin is a cloud-based call center software designed for sales and customer support teams. It provides an intuitive interface, powerful automation features, and seamless CRM integrations to boost team productivity.",
+    "website": "https://www.voicespin.com",
+    "logo": "voicespin",
+    "pdf_path": "",
+    "enabled": false,
+    "default": false,
+    "profiles": [],
+    "default_profile": null,
+    "rating": 0,
+    "review_count": 0,
+    "existing_count": 0,
+    "can_add_more": true,
+    "has_engine": true,
+    "required_credentials": [
+      "api_token",
+      "company_id",
+      "webhook_secret"
+    ],
+    "supported_features": [
+      "outbound_calls",
+      "inbound_calls",
+      "click_to_call",
+      "power_dialer",
+      "predictive_dialer",
+      "call_recording",
+      "call_monitoring",
+      "call_whisper",
+      "call_barge",
+      "ivr",
+      "acd",
+      "callback_widget",
+      "sms",
+      "voicemail_drop",
+      "local_presence",
+      "call_scripts",
+      "crm_integration",
+      "salesforce_integration",
+      "hubspot_integration",
+      "real_time_analytics",
+      "call_tracking"
+    ],
+    "supported_regions": [
+      "Global"
+    ],
+    "supported_languages": [
+      "en",
+      "es",
+      "ru",
+      "uk"
+    ],
+    "technical_specs": {
+      "max_concurrent_calls": 5000,
+      "call_timeout_minutes": 180,
+      "supports_https": true,
+      "ip_whitelist_required": false,
+      "api_version": "v1",
+      "integration_type": "rest_api",
+      "authentication_method": "bearer_token"
+    },
+    "api_endpoints": {
+      "base_url": "https://api.voicespin.com/v1",
+      "calls": "/calls",
+      "contacts": "/contacts",
+      "campaigns": "/campaigns",
+      "recordings": "/recordings",
+      "webhooks": "/webhooks"
+    },
+    "pricing": {
+      "type": "subscription",
+      "starting_price": "$45 per agent/month"
+    }
+  },
+  {
+    "type": "didglobal",
+    "id": 10,
+    "name": "DidGlobal",
+    "description": "DidGlobal is a global provider of DID numbers and VoIP services with coverage in over 100 countries. It offers flexible communication solutions including virtual phone numbers, SMS capabilities, and voice termination services.",
+    "website": "https://www.didglobal.com",
+    "logo": "didglobal",
+    "pdf_path": "",
+    "enabled": false,
+    "default": false,
+    "profiles": [],
+    "default_profile": null,
+    "rating": 0,
+    "review_count": 0,
+    "existing_count": 0,
+    "can_add_more": true,
+    "has_engine": true,
+    "required_credentials": [
+      "api_key",
+      "customer_id",
+      "sip_username",
+      "sip_password"
+    ],
+    "supported_features": [
+      "did_numbers",
+      "local_numbers",
+      "mobile_numbers",
+      "vanity_numbers",
+      "number_porting",
+      "voice_termination",
+      "voice_origination",
+      "sms",
+      "two_way_sms",
+      "fax",
+      "call_forwarding",
+      "time_based_routing",
+      "ivr",
+      "call_recording",
+      "real_time_provisioning",
+      "bulk_ordering"
+    ],
+    "supported_regions": [
+      "Global"
+    ],
+    "supported_languages": [
+      "en",
+      "es",
+      "pt",
+      "fr",
+      "de",
+      "it",
+      "ru",
+      "zh",
+      "ja"
+    ],
+    "technical_specs": {
+      "max_concurrent_calls": 10000,
+      "call_timeout_minutes": 240,
+      "supports_https": true,
+      "ip_whitelist_required": true,
+      "api_version": "v2",
+      "integration_type": "rest_api_sip_trunk",
+      "authentication_method": "api_key"
+    },
+    "api_endpoints": {
+      "base_url": "https://api.didglobal.com/v2",
+      "available_numbers": "/numbers/available",
+      "order_number": "/numbers/order",
+      "port_number": "/numbers/port",
+      "sms": "/sms/send",
+      "cdr": "/reports/cdr"
+    },
+    "pricing": {
+      "type": "pay_as_you_go",
+      "starting_price": "$1 per DID/month"
+    }
+  }
+]

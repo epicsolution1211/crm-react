@@ -1,0 +1,96 @@
+name: Deploy to Cloudflare Pages
+
+run-name: Deploy ${{ inputs.project_name }} to Cloudflare Pages
+
+on:
+  workflow_dispatch:
+    inputs:
+      project_name:
+        description: 'Project name (tassos, crmx, etc.)'
+        required: true
+        type: string
+      environment:
+        description: 'Environment to deploy to'
+        required: true
+        default: 'production'
+        type: choice
+        options:
+          - production
+          - staging
+      react_app_host:
+        description: 'REACT_APP_HOST from server'
+        required: true
+        type: string
+      react_app_host_domain:
+        description: 'REACT_APP_HOST_DOMAIN from server'
+        required: true
+        type: string
+      react_app_socket:
+        description: 'REACT_APP_SOCKET from server'
+        required: true
+        type: string
+
+concurrency:
+  group: deploy-${{ inputs.project_name }}-${{ inputs.environment }}
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    name: Build and Deploy ${{ inputs.project_name }}
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: |
+          npm install
+          npm install -g wrangler
+        env:
+          NODE_ENV: production
+      
+      - name: Build project
+        run: |
+          npm run build
+          echo "📊 Build completed. Analyzing bundle sizes..."
+          if [ -d "build/static/js" ]; then
+            echo "JavaScript bundle sizes:"
+            ls -lah build/static/js/
+            echo "Total build size:"
+            du -sh build/
+          fi
+        env:
+          NODE_ENV: production
+          GENERATE_SOURCEMAP: false
+          CI: true
+          INLINE_RUNTIME_CHUNK: false
+          IMAGE_INLINE_SIZE_LIMIT: 0
+          BUILD_PATH: build
+          REACT_APP_HOST: ${{ inputs.react_app_host }}
+          REACT_APP_HOST_DOMAIN: ${{ inputs.react_app_host_domain }}
+          REACT_APP_SOCKET: ${{ inputs.react_app_socket }}
+      
+      - name: Deploy to Cloudflare Pages
+        run: |
+          wrangler pages deploy ./build \
+            --project-name="${{ inputs.project_name }}" \
+            --branch=main
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      
+      - name: Deployment Summary
+        run: |
+          echo "✅ Successfully deployed to Cloudflare Pages"
+          echo "🌐 Project: ${{ inputs.project_name }}"
+          echo "🔧 Environment: ${{ inputs.environment }}"
+          echo "📝 Commit: ${{ github.sha }}"
+          echo "🕐 Time: $(date)"
