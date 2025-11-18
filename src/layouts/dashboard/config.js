@@ -37,6 +37,17 @@ export const useSections = () => {
             ),
           },
           {
+            title: t(tokens.nav.appDashboard),
+            path: paths.dashboard.appDashboard.index,
+            icon: <Iconify icon="tdesign:user-vip" width={20} />,
+            items: [
+              {
+                title: t(tokens.nav.settings),
+                path: paths.dashboard.appDashboard.settings,
+              }
+            ],
+          },
+          {
             title: t(tokens.nav.leaderboard),
             path: paths.dashboard.leaderboard,
             icon: (

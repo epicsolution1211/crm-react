@@ -150,6 +150,9 @@ const SubmittedFormsPage = lazy(() => import("src/pages/dashboard/submitted-form
 // Integration
 const IntegrationPage = lazy(() => import("src/pages/dashboard/integration"));
 
+//app-dashboard casino 
+const CasinoSettingPage = lazy(() => import("src/pages/dashboard/app-dashboard/settings"))
+
 export const dashboardRoutes = [
   {
     path: "dashboard",
@@ -213,6 +216,27 @@ export const dashboardRoutes = [
             path: ":customerId/edit",
             element: <CustomerEditPage />,
           },
+        ],
+      },
+      {
+        path: "app-dashboard",
+        children: [
+          {
+            path: "settings",
+            element: <CasinoSettingPage />,
+          },
+          // {
+          //   path: "ib-requests",
+          //   element: <IbRequestsPage />,
+          // },
+          // {
+          //   path: "ib-rewards",
+          //   element: <IbRewardsPage />,
+          // },
+          // {
+          //   path: "ib-rewards/:ibRewardId",
+          //   element: <IbRewardDetailPage />,
+          // },
         ],
       },
       {
