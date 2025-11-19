@@ -17,14 +17,18 @@ export const SettingsSidebar = (props) => {
   const { company } = useAuth();
 
   const sideMenuList = [
-    { label: "Clients", value: "Client" },
-    { label: "Transactions", value: "TTransaction" },
-    { label: "Positions", value: "Position" },
-    { label: "Comments", value: "ClientComment" },
-    { label: "Agents", value: "Account" },
-    { label: "Settings", value: "Setting" },
-    { label: "Calls", value: "Calls" },
-    ...(company?.company_type === 2 ? [{ label: "Bets", value: "Bet" }] : []),
+    { label: "Brand Name & Identity", value: "BrandNameIdentity" },
+    {
+      label: "Appearance",
+      value: "Appearance",
+      children: [
+        { label: "Theme Selector", value: "ThemeSelector" },
+        { label: "Color Scheme", value: "ColorScheme" },
+        { label: "Login / Signup BC Image", value: "LoginSignupBCImage" },
+      ],
+    },
+    { label: "Categories", value: "Categories" },
+    { label: "Menus", value: "Menus" },
   ];
 
   const content = (
@@ -72,12 +76,13 @@ export const SettingsSidebar = (props) => {
       <Drawer
         anchor="left"
         open={open}
+        sx={{pt:2}}
         PaperProps={{
           sx: {
             position: "relative",
             width: 280,
             zIndex: 1100,
-            backgroundColor:"#0E1320"
+            backgroundColor: "#0E1320",
           },
         }}
         SlideProps={{ container }}
@@ -92,6 +97,9 @@ export const SettingsSidebar = (props) => {
   return (
     <Drawer
       anchor="left"
+      sx={{
+        pt:2
+      }}
       //   hideBackdrop
       ModalProps={{
         container,
