@@ -1,8 +1,9 @@
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import { useMemo, useRef, useState } from "react";
 import { SettingsSidebar } from "../settings-sidebar";
 import { MailContainer } from "../../../mail/mail-container";
 import { MainBrandNameIdentity } from "./brand-name-identity/main"
+import { AppearanceMain } from "./appearance/main"
 
 const labels = [
   { name: "Brand Name & Identity", id: "BrandNameIdentity" },
@@ -13,11 +14,13 @@ const labels = [
 export function DesignBranding({ handleClose, open }) {
   const rootRef = useRef(null);
   const [currentMenu, setCurrentMenu] = useState("BrandNameIdentity");
+  const [selectedChildOne, setSelectedChildOne] = useState("ThemeSelector");
 
   const currentComponent =  useMemo(()=>{
     if (currentMenu === "BrandNameIdentity") return <MainBrandNameIdentity />
+    if (currentMenu === "Appearance") return <AppearanceMain currentMenu={selectedChildOne}/>
 
-  },[currentMenu])
+  },[currentMenu , selectedChildOne])
   return (
     <Box
       component="main"
@@ -43,6 +46,7 @@ export function DesignBranding({ handleClose, open }) {
           currentLabelId={"currentLabelId"}
           labels={labels}
           currentMenu={currentMenu}
+          selectedChildOne={(data) => setSelectedChildOne(data)}
           setCurrentMenu={(val) => {
             setCurrentMenu(val);
             //   setAccountId(null);

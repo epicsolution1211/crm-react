@@ -7,14 +7,14 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 
 import { SettingLabel } from "./setting-label";
 import { Iconify } from "src/components/iconify";
-import { useAuth } from "src/hooks/use-auth";
+
 
 export const SettingsSidebar = (props) => {
-  const { container, onClose, currentMenu, setCurrentMenu, open, ...other } =
+  const { container, onClose, currentMenu, setCurrentMenu, open, selectedChildOne , ...other } =
     props;
 
   const mdUp = useMediaQuery((theme) => theme.breakpoints.up("md"));
-  const { company } = useAuth();
+
 
   const sideMenuList = [
     { label: "Brand Name & Identity", value: "BrandNameIdentity" },
@@ -56,13 +56,14 @@ export const SettingsSidebar = (props) => {
           px: 2,
         }}
       >
-        <Stack direction="column" gap={1}>
+        <Stack direction="column" gap={1} pt={2}>
           {sideMenuList.map((item) => (
             <List disablePadding key={item?.value}>
               <SettingLabel
                 menu={item}
                 active={currentMenu === item?.value}
                 onClick={() => setCurrentMenu(item?.value)}
+                selectedChildOne={selectedChildOne}
               />
             </List>
           ))}
@@ -76,7 +77,7 @@ export const SettingsSidebar = (props) => {
       <Drawer
         anchor="left"
         open={open}
-        sx={{pt:2}}
+
         PaperProps={{
           sx: {
             position: "relative",
@@ -97,9 +98,7 @@ export const SettingsSidebar = (props) => {
   return (
     <Drawer
       anchor="left"
-      sx={{
-        pt:2
-      }}
+ 
       //   hideBackdrop
       ModalProps={{
         container,

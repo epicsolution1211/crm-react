@@ -7,10 +7,10 @@ import { useCallback, useState } from "react";
 import { Iconify } from "src/components/iconify";
 
 export const SettingLabel = (props) => {
-  const { active, menu, depth = 0, disabled = false, ...other } = props;
+  const { active, menu, depth = 0, disabled = false ,selectedChildOne , ...other } = props;
   const theme = useTheme()
   const [open, setOpen] = useState(false);
-  const [selectedChild , setSelectedChild] = useState("")
+  const [selectedChild , setSelectedChild] = useState(menu?.children?.[0]?.value)
 
   const handleToggle = useCallback(() => {
     setOpen((prevOpen) => !prevOpen);
@@ -29,7 +29,10 @@ export const SettingLabel = (props) => {
       <li>
         <ButtonBase
           disabled={disabled}
-          onClick={handleToggle}
+          onClick={()=>{
+            handleToggle()
+            props?.onClick?.()
+          }}
           sx={{
             alignItems: "center",
             borderRadius: 1,
@@ -40,15 +43,15 @@ export const SettingLabel = (props) => {
             py: "6px",
             textAlign: "left",
             width: "100%",
-            ...(active && {
-              ...(depth === 0 && {
-                backgroundColor: "var(--nav-item-active-bg)",
-              }),
-            }),
             "&:hover": {
-              backgroundColor: "var(--nav-item-hover-bg)",
-            },
+            backgroundColor: "action.hover",
+          },
+          ...(active && {
+            backgroundColor: "action.selected",
+            color: "text.primary",
+          }),
           }}
+          
         >
           {icon[menu?.value] && (
             <Box
@@ -134,6 +137,7 @@ export const SettingLabel = (props) => {
                     color: "text.primary",
                   }),
                 }}
+                onClick={()=>selectedChildOne(item?.value)}
               >
                 {icon[item?.value]}
                 <Box sx={{ flexGrow: 1, ml: 1 }}>{item?.label ?? ""}</Box>
@@ -141,8 +145,8 @@ export const SettingLabel = (props) => {
 
               { item?.value === selectedChild && <Box sx={{
                 position:"absolute",
-                left:-17,
-                height:"33px",
+                left:-17.5,
+                height:"23px",
                 width:"2px",
                 borderRadius:"1px",
                 bgcolor:theme.palette.neutral[500]

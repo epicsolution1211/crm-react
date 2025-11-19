@@ -1,16 +1,16 @@
 import {
-    Box,
+  Box,
+  Grid,
   InputLabel,
-  MenuItem,
-  Select,
   TextField,
   Typography,
 } from "@mui/material";
-import { Iconify } from "src/components/iconify";
+import { SelectLanguage } from "./select-laguage";
 
 export function AppNameAndLanguage() {
+
   return (
-    <Box>
+    <Box width={"100%"} display={"grid"}>
       <Typography
         sx={{
           fontSize: "35px",
@@ -19,26 +19,29 @@ export function AppNameAndLanguage() {
       >
         Set App Name & Language
       </Typography>
-      <Box display={"flex"}>
-        <Box>
-          <InputLabel>App Name</InputLabel>
-          <TextField size="small" placeholder="Type your app name here" />
-        </Box>
-        <Box>
-          <InputLabel>Default App Language</InputLabel>
-          <Select variant="standard" size="small" >
-            <MenuItem value="home">
-              <Iconify icon="simple-icons:feedly" width={20} color="#BDBDBD" />
-              Home
-            </MenuItem>
+      <Grid container spacing={3} gap={2} mt={1}>
+        <Grid item xs={5} rowGap={1} >
+          <InputLabel py={1}>App Name</InputLabel>
+          <TextField
+            size="small"
+            placeholder="Type your app name here"
+            fullWidth
+            variant="outlined"
+          />
+        </Grid>
+        <Grid item xs={5}  rowGap={1}>
+          <InputLabel py={1} >Default App Language</InputLabel>
+          <SelectLanguage />
+        </Grid>
+      </Grid>
 
-            <MenuItem value="work">
-              <Iconify icon="simple-icons:feedly" width={20} color="#BDBDBD" />
-              Work
-            </MenuItem>
-          </Select>
-        </Box>
-      </Box>
+      <Typography sx={{ mt: 3, color: "text.secondary"}}>
+        All the Lorem Ipsum generators on the Internet tend to repeat predefined
+        chunks as necessary, making this the first true generator on the
+        Internet. It uses a dictionary of over 200 Latin words, combined with a
+        handful of model sentence structures, to generate Lorem Ipsum which
+        looks reasonable.
+      </Typography>
     </Box>
   );
 }

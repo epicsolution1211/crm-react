@@ -1,14 +1,10 @@
-import { useCallback, useEffect, useRef, useState } from "react";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { SettingsSidebar } from "./settings-sidebar";
-import { MailContainer } from "../../mail/mail-container";
 import { Iconify } from "src/components/iconify";
 import { SettingTabs } from "./tabs/tabs";
 import { DesignBranding } from "./design-branding/design-branding";
@@ -52,18 +48,16 @@ const useSidebar = () => {
   };
 };
 
-const labels = [
-  { name: "Brand Name & Identity", id: "BrandName&Identity" },
-  { name: "Appearance", id: "Appearance" },
-  { name: "Categories", id: "Categories" },
-  { name: "Menus", id: "Menus" },
-];
-
 export const CasinoAppSettings = () => {
-  const rootRef = useRef(null);
   const sidebar = useSidebar();
-  // const [currentMenu, setCurrentMenu] = useState("");
   const [currentTab, setCurrentTab] = useState(settingsTabs[0]);
+
+  const currentComponent = useMemo(() => {
+    if (currentTab === "Design & Branding")
+      return (
+        <DesignBranding handleClose={sidebar.handleClose} open={sidebar.open} />
+      );
+  }, [currentTab, sidebar.handleClose, sidebar.open]);
 
   return (
     <Stack p={3}>
@@ -78,9 +72,7 @@ export const CasinoAppSettings = () => {
         onSelect={(tab) => setCurrentTab(tab)}
         items={settingsTabs}
       />
-      {currentTab === "Design & Branding" && (
-        <DesignBranding handleClose={sidebar.handleClose} open={sidebar.open} />
-      )}
+      {currentComponent}
     </Stack>
   );
 };

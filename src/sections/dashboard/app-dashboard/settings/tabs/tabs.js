@@ -1,5 +1,5 @@
 import { TabContext, TabList } from "@mui/lab";
-import { Box, Tab, Tabs, useTheme } from "@mui/material";
+import { Box, Tab, useTheme } from "@mui/material";
 import React, { useState } from "react";
 
 export function SettingTabs({ items , onSelect}) {
@@ -18,12 +18,10 @@ export function SettingTabs({ items , onSelect}) {
             onChange={handleChange}
             aria-label="lab API tabs example"
             textColor="inherit"
-            // indicatorColor={"secondary"}
             variant="scrollable"
             TabIndicatorProps={{
               sx: {
-                backgroundColor: theme.palette.primary.contrastText, // your custom color
-                // height: "3px", // optional
+                backgroundColor: theme.palette.primary.contrastText,
               },
             }}
           >
