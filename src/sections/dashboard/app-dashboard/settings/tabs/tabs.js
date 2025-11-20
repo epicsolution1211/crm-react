@@ -21,7 +21,7 @@ export function SettingTabs({ items , onSelect}) {
             variant="scrollable"
             TabIndicatorProps={{
               sx: {
-                backgroundColor: theme.palette.primary.contrastText,
+                backgroundColor: theme.palette.text.primary,
               },
             }}
           >

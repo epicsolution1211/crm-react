@@ -1,12 +1,14 @@
-import { Box, Radio, Typography } from "@mui/material";
+import { Box, Card, Radio, Typography } from "@mui/material";
 
 export function ThemeItem({themeId, url , title, subtitle , selected , onChange }) {
   return (
-    <Box
-      width={320}
+    <Card
       sx={{
+        mt:1,
+        width:"320px",
         bgcolor: "background.paper",
         borderRadius: "20px",
+        boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.1)",
       }}
     >
       <Box p={2.5}>
@@ -40,6 +42,6 @@ export function ThemeItem({themeId, url , title, subtitle , selected , onChange 
           inputProps={{ "aria-label": "A" }}
         />
       </Box>
-    </Box>
+    </Card>
   );
 }
