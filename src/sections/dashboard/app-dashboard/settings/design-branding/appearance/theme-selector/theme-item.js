@@ -1,6 +1,6 @@
 import { Box, Radio, Typography } from "@mui/material";
 
-export function ThemeItem({url , title, subtitle , selected , onChange }) {
+export function ThemeItem({themeId, url , title, subtitle , selected , onChange }) {
   return (
     <Box
       width={320}
@@ -33,10 +33,9 @@ export function ThemeItem({url , title, subtitle , selected , onChange }) {
       />
       <Box px={2.5} py={1} display={"flex"} justifyContent={"flex-end"} alignItems={"end"}>
         <Radio
-          checked={url === selected}
-
+          checked={themeId === selected}
           onChange={onChange}
-          value={url}
+          value={themeId}
           name="radio-buttons"
           inputProps={{ "aria-label": "A" }}
         />

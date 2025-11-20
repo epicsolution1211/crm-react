@@ -8,7 +8,6 @@ import { ThemeItem } from "./theme-item";
 export function ThemeSelector() {
   const scrollContainerRef = useRef(null);
   const [selectedBaner , setSelectedBaner] = useState(null);
-
   const scrollToRight = () => {
     if (scrollContainerRef.current) {
       scrollContainerRef.current.scrollBy({
@@ -86,6 +85,7 @@ export function ThemeSelector() {
         }}
       >
         <ThemeItem
+          themeId={"1"}
           url={"/assets/baners/baner-one.png"}
           title={"Purple Plus T"}
           subtitle={"Introductory course for design and framework basics"}
@@ -93,6 +93,7 @@ export function ThemeSelector() {
           onChange ={((event) => setSelectedBaner(event.target.value))}
         />
         <ThemeItem
+          themeId={"2"}
           url={"/assets/baners/baner-two.png"}
           title={"Dark Blue Moon"}
           subtitle={"Introductory course for design and framework basics"}
@@ -100,6 +101,7 @@ export function ThemeSelector() {
           onChange ={((event) => setSelectedBaner(event.target.value))}
         />
         <ThemeItem
+          themeId={"3"}
           url={"/assets/baners/baner-one.png"}
           title={"Dark Blue Moon"}
           subtitle={"Introductory course for design and framework basics"}
