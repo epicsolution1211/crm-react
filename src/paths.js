@@ -89,6 +89,10 @@ export const paths = {
       powerBi: '/dashboard/reports/power-bi',
     },
     submittedForms: '/dashboard/submitted-forms',
+    appDashboard:{
+      index:"/dashboard/app-dashboard",
+      settings:"/dashboard/app-dashboard/settings"
+    },
     leaderboard: "/dashboard/leaderboard",
     settings: "/dashboard/settings",
     account: "/dashboard/account",

@@ -110,5 +110,11 @@ export const tokens = {
     ibRequests: `nav.ibRequests`,
     ibRewards: `nav.ibRewards`,
     aiQuestions: `nav.aiQuestions`,
+    appDashboard:"App Dashboard",
+    lucky:"lucky",
+    slots:"Slots",
+    promotions:"Promotions",
+    liveCasino:"Live Casino",
+    sport:"Sport",
   },
 };

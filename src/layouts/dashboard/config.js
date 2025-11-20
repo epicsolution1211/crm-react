@@ -11,7 +11,7 @@ import HomeSmileIcon from "src/icons/untitled-ui/duocolor/home-smile";
 import LayoutAlt02Icon from "src/icons/untitled-ui/duocolor/layout-alt-02";
 import MessageChatSquareIcon from "src/icons/untitled-ui/duocolor/message-chat-square";
 import Users03Icon from "src/icons/untitled-ui/duocolor/users-03";
-import { Iconify } from 'src/components/iconify';
+import { Iconify } from "src/components/iconify";
 import { paths } from "src/paths";
 import { tokens } from "src/locales/tokens";
 
@@ -25,22 +25,32 @@ export const useSections = () => {
           {
             title: t(tokens.nav.tasks),
             path: paths.dashboard.tasks,
-            icon: (
-              <Iconify icon="mdi:todo-auto" width={20} />
-            ),
+            icon: <Iconify icon="mdi:todo-auto" width={20} />,
           },
           {
             title: t(tokens.nav.tickets),
             path: paths.dashboard.tickets,
-            icon: (
-              <Iconify icon="bx:task" width={20} />
-            ),
+            icon: <Iconify icon="bx:task" width={20} />,
+          },
+          {
+            title: t(tokens.nav.appDashboard),
+            path: paths.dashboard.appDashboard.index,
+            icon: <Iconify icon="tdesign:user-vip" width={20} />,
+            items: [
+              {
+                title: t(tokens.nav.settings),
+                path: paths.dashboard.appDashboard.settings,
+              },
+            ],
           },
           {
             title: t(tokens.nav.leaderboard),
             path: paths.dashboard.leaderboard,
             icon: (
-              <Iconify icon="material-symbols-light:social-leaderboard" width={20} />
+              <Iconify
+                icon="material-symbols-light:social-leaderboard"
+                width={20}
+              />
             ),
           },
           {
@@ -91,34 +101,28 @@ export const useSections = () => {
               {
                 title: t(tokens.nav.ibRewards),
                 path: paths.dashboard.ib.ibRewards.index,
-              }
+              },
             ],
           },
           {
             title: t(tokens.nav.agents),
             path: paths.dashboard.agents,
-            icon: (<Iconify icon="ic:outline-support-agent" width={24} />),
+            icon: <Iconify icon="ic:outline-support-agent" width={24} />,
           },
           {
             title: t(tokens.nav.internalChat),
             path: paths.dashboard.internalChat,
-            icon: (
-              <Iconify icon="mdi:message-outline" width={24} height={24} />
-            ),
+            icon: <Iconify icon="mdi:message-outline" width={24} height={24} />,
           },
           {
             title: t(tokens.nav.supportChats),
             path: paths.dashboard.supportChats,
-            icon: (
-              <Iconify icon="fluent:person-support-16-filled" width={20} />
-            )
+            icon: <Iconify icon="fluent:person-support-16-filled" width={20} />,
           },
           {
             title: t(tokens.nav.emails),
             path: paths.dashboard.emails,
-            icon: (
-              <Iconify icon="ic:outline-email" width={20} />
-            )
+            icon: <Iconify icon="ic:outline-email" width={20} />,
           },
           {
             title: t(tokens.nav.lead),
@@ -181,12 +185,12 @@ export const useSections = () => {
           {
             title: t(tokens.nav.complianceRegulationAudit),
             path: paths.dashboard.complianceAudit.compliance,
-            icon: <Iconify icon="hugeicons:analytics-up" width={20}/>,
+            icon: <Iconify icon="hugeicons:analytics-up" width={20} />,
           },
           {
             title: t(tokens.nav.logs),
             path: paths.dashboard.log,
-            icon: <Iconify icon="majesticons:analytics-line" width={24}/>,
+            icon: <Iconify icon="majesticons:analytics-line" width={24} />,
           },
           {
             title: t(tokens.nav.payment),
@@ -226,9 +230,7 @@ export const useSections = () => {
           {
             title: t(tokens.nav.calendar),
             path: paths.dashboard.calendar,
-            icon: (
-              <Iconify icon="lucide:calendar" width={20}/>
-            )
+            icon: <Iconify icon="lucide:calendar" width={20} />,
           },
           {
             title: t(tokens.nav.article),
@@ -252,15 +254,16 @@ export const useSections = () => {
             title: t(tokens.nav.integration),
             path: paths.dashboard.integration.index,
             icon: (
-              <Iconify icon="material-symbols:integration-instructions-outline" width={24}/>
+              <Iconify
+                icon="material-symbols:integration-instructions-outline"
+                width={24}
+              />
             ),
           },
           {
             title: t(tokens.nav.reports),
             path: "",
-            icon: (
-              <Iconify icon="fa-regular:list-alt" width={18}/>
-            ),
+            icon: <Iconify icon="fa-regular:list-alt" width={18} />,
             items: [
               {
                 title: t(tokens.nav.metabase),
@@ -295,16 +298,12 @@ export const useSections = () => {
           {
             title: t(tokens.nav.submittedForms),
             path: paths.dashboard.submittedForms,
-            icon: (
-              <Iconify icon="mdi:file-document-outline" width={24}/>
-            )
+            icon: <Iconify icon="mdi:file-document-outline" width={24} />,
           },
           {
             title: t(tokens.nav.aiQuestions),
             path: paths.dashboard.aiQuestions,
-            icon: (
-              <Iconify icon="mingcute:ai-fill" width={24}/>
-            )
+            icon: <Iconify icon="mingcute:ai-fill" width={24} />,
           },
         ],
       },
@@ -357,7 +356,8 @@ export const useAffiliateSections = () => {
             icon: (
               <SvgIcon fontSize="small">
                 <AgentIcon />
-              </SvgIcon>),
+              </SvgIcon>
+            ),
           },
           {
             title: t(tokens.nav.internalChat),
@@ -371,9 +371,7 @@ export const useAffiliateSections = () => {
           {
             title: t(tokens.nav.supportChats),
             path: paths.dashboard.supportChats,
-            icon: (
-              <Iconify icon="fluent:person-support-16-filled" width={16} />
-            )
+            icon: <Iconify icon="fluent:person-support-16-filled" width={16} />,
           },
           {
             title: t(tokens.nav.analytics),
@@ -540,14 +538,12 @@ export const useAffiliateSections = () => {
           {
             title: t(tokens.nav.reports),
             path: paths.dashboard.reports,
-            icon: (
-              <Iconify icon="mingcute:bug-line" width={24}/>
-            )
+            icon: <Iconify icon="mingcute:bug-line" width={24} />,
           },
           {
             title: t(tokens.nav.logs),
             path: paths.dashboard.log,
-            icon: <Iconify icon="octicon:log-16" width={24}/>,
+            icon: <Iconify icon="octicon:log-16" width={24} />,
           },
         ],
       },
