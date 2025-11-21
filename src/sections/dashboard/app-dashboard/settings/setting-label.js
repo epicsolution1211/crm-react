@@ -7,10 +7,12 @@ import { useCallback, useState } from "react";
 import { Iconify } from "src/components/iconify";
 
 export const SettingLabel = (props) => {
-  const { active, menu, depth = 0, disabled = false ,selectedChildOne , ...other } = props;
+  const { active, menu, depth = 0, disabled = false ,selectedChildOne , selectedChildTwo , ...other } = props;
   const theme = useTheme()
   const [open, setOpen] = useState(false);
+  const [openCollapse, setOpenCollapse] = useState(false);
   const [selectedChild , setSelectedChild] = useState(menu?.children?.[0]?.value)
+  const [selectedChildTwoState , setSelectedChildTwoState] = useState(menu?.children?.[0]?.children?.[0]?.value)
 
   const handleToggle = useCallback(() => {
     setOpen((prevOpen) => !prevOpen);
@@ -96,13 +98,14 @@ export const SettingLabel = (props) => {
             sx={{ color: "text.disabled" }}
           />
         </ButtonBase>
-        <Collapse in={open} sx={{ mt: 0.5 , pl:2 }} >
+        <Collapse in={open} sx={{ mt: 0.5 , pl:1 }} >
         <Box sx={{
           borderLeft:`1px solid ${theme.palette.neutral[700]}`,
-          pl:2
+          pl:1
         }}>
 
           {menu?.children.map((item) => (
+            <li key={item?.value}>
             <ListItem
               disableGutters
               disablePadding
@@ -137,7 +140,14 @@ export const SettingLabel = (props) => {
                     color: "text.primary",
                   }),
                 }}
-                onClick={()=>selectedChildOne(item?.value)}
+                onClick={()=>{
+                  selectedChildOne(item?.value)
+                  if(item?.children) {
+                    setOpenCollapse(true)
+                  } else {
+                    setOpenCollapse(false)
+                  }
+                }}
               >
                 {icon[item?.value]}
                 <Box sx={{ flexGrow: 1, ml: 1 }}>{item?.label ?? ""}</Box>
@@ -145,13 +155,65 @@ export const SettingLabel = (props) => {
 
               { item?.value === selectedChild && <Box sx={{
                 position:"absolute",
-                left:-17.5,
+                left:-9.5,
                 height:"23px",
                 width:"2px",
                 borderRadius:"1px",
                 bgcolor:theme.palette.neutral[500]
               }}/>}
             </ListItem>
+            {
+              item?.children &&
+              <Collapse in={openCollapse} sx={{ mt: 0.5 , pl:1 }} >
+                <Box sx={{
+                  pl:1
+                }}>
+
+            {item?.children.map((item) => (
+               <ListItem
+               disableGutters
+               disablePadding
+               sx={{
+                 position:"relative",
+ 
+                 "& + &": {
+                   mt: 1,
+                   
+                 },
+               }}
+               {...other}
+               onClick={()=>setSelectedChildTwoState(item?.value) }
+             >
+               <ButtonBase
+                 sx={{
+                   borderRadius: 1,
+                   color: "text.secondary",
+                   flexGrow: 1,
+                   fontSize: (theme) => theme.typography.button.fontSize,
+                   fontWeight: (theme) => theme.typography.button.fontWeight,
+                   justifyContent: "flex-start",
+                   lineHeight: (theme) => theme.typography.button.lineHeight,
+                   py: 1,
+                   px: 2,
+                   textAlign: "left",
+                   "&:hover": {
+                     backgroundColor: "action.hover",
+                   },
+                   ...(item?.value === selectedChildTwoState && {
+                     backgroundColor: "action.selected",
+                     color: "text.primary",
+                   }),
+                 }}
+                 onClick={()=>selectedChildTwo(item?.value)}
+               >
+                 <Box sx={{ flexGrow: 1, ml: 1 }}>{item?.label ?? ""}</Box>
+               </ButtonBase>
+             </ListItem>
+            ))}
+                </Box>
+            </Collapse>
+            }
+            </li>
           ))}
         </Box>
         </Collapse>

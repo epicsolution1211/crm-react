@@ -74,7 +74,7 @@ export const createComponents = ({ palette }) => {
     MuiFilledInput: {
       styleOverrides: {
         root: {
-          borderColor: palette.divider,
+          borderColor: palette.neutral[450],
           '&:hover': {
             backgroundColor: palette.action.hover
           },
@@ -99,7 +99,7 @@ export const createComponents = ({ palette }) => {
           '&:hover': {
             backgroundColor: palette.action.hover,
             [`& .${outlinedInputClasses.notchedOutline}`]: {
-              borderColor: palette.divider
+              borderColor: palette.neutral[450]
             }
           },
           [`&.${outlinedInputClasses.focused}`]: {
@@ -117,7 +117,7 @@ export const createComponents = ({ palette }) => {
           }
         },
         notchedOutline: {
-          borderColor: palette.divider
+          borderColor: palette.neutral[450]
         }
       }
     },
