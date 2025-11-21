@@ -83,7 +83,9 @@ export const SettingsSidebar = (props) => {
             position: "relative",
             width: 280,
             zIndex: 1100,
-            backgroundColor: "#0E1320",
+            // backgroundColor: "#0E1320",
+            // backgroundColor: "background.paper",
+            backgroundColor: "transparent !important"
           },
         }}
         SlideProps={{ container }}

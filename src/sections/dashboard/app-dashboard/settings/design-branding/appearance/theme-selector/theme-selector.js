@@ -82,6 +82,9 @@ export function ThemeSelector() {
             flex: "0 0 auto",
           },
           "&::-webkit-scrollbar": { display: "none" },
+          "&:active": {
+            cursor: "grabbing",
+          },
         }}
       >
         <ThemeItem
