@@ -1,6 +1,7 @@
 import { inputLabelClasses } from '@mui/material/InputLabel';
 import { tableCellClasses } from '@mui/material/TableCell';
 import { createTheme } from '@mui/material/styles';
+import { neutral } from '../colors';
 
 // Used only to create transitions
 const muiTheme = createTheme();
@@ -210,6 +211,7 @@ export const createComponents = () => {
           borderStyle: 'solid',
           borderWidth: 1,
           overflow: 'hidden',
+          // borderColor: neutral[450],
           transition: muiTheme.transitions.create([
             'border-color',
             'box-shadow'
@@ -236,6 +238,7 @@ export const createComponents = () => {
           lineHeight: '24px'
         },
         notchedOutline: {
+          borderColor: neutral[450],
           transition: muiTheme.transitions.create([
             'border-color',
             'box-shadow'

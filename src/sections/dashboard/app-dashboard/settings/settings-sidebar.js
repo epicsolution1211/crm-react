@@ -10,7 +10,7 @@ import { Iconify } from "src/components/iconify";
 
 
 export const SettingsSidebar = (props) => {
-  const { container, onClose, currentMenu, setCurrentMenu, open, selectedChildOne , ...other } =
+  const { container, onClose, currentMenu, setCurrentMenu, open, selectedChildOne , selectedChildTwo , ...other } =
     props;
 
   const mdUp = useMediaQuery((theme) => theme.breakpoints.up("md"));
@@ -28,7 +28,15 @@ export const SettingsSidebar = (props) => {
       ],
     },
     { label: "Categories", value: "Categories" },
-    { label: "Menus", value: "Menus" },
+    { label: "Menus", value: "Menus" , children:[
+      { label: "Mobile menu", value: "MobileMenu" , children:[
+        {label: "Bottom menu navigation", value: "BottomMenuNavigation" },
+        {label: "Left side menu", value: "LeftSideMenu" },
+        {label: "Add Banner", value: "AddBanner" },
+      ]},
+      { label: "Tablet menu", value: "TabletMenu" },
+      { label: "Desktop menu", value: "DesktopMenu" },
+    ] },
   ];
 
   const content = (
@@ -64,6 +72,7 @@ export const SettingsSidebar = (props) => {
                 active={currentMenu === item?.value}
                 onClick={() => setCurrentMenu(item?.value)}
                 selectedChildOne={selectedChildOne}
+                selectedChildTwo={selectedChildTwo}
               />
             </List>
           ))}
