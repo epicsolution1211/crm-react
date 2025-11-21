@@ -1,3 +1,4 @@
+
 import {
   Box,
   Button,
@@ -34,16 +35,14 @@ export function ColorSchemeMain() {
                 alignContent: "center",
                 border: "1px solid #6E6E6E",
                 borderRadius: "8px",
-                px: 2.5,
+                px: 2,
                 py: 1,
               }}
             >
               <Typography variant="body1" opacity={0.75}>
                 Dark Mode
               </Typography>
-              <FormControlLabel
-                control={<Checkbox defaultChecked />}
-              />
+              <Switch defaultChecked />
             </Box>
             <Box>
               <FormControlLabel
@@ -61,16 +60,15 @@ export function ColorSchemeMain() {
                 alignContent: "center",
                 border: "1px solid #6E6E6E",
                 borderRadius: "8px",
-                px: 2.5,
+                px: 2,
                 py: 1,
               }}
             >
               <Typography variant="body1" opacity={0.75}>
                 Light Mode
               </Typography>
-              <FormControlLabel
-                control={<Checkbox defaultChecked />}
-              />
+             <Switch defaultChecked />
+
             </Box>
             <Box>
               <FormControlLabel
@@ -88,15 +86,15 @@ export function ColorSchemeMain() {
                 alignContent: "center",
                 border: "1px solid #6E6E6E",
                 borderRadius: "8px",
-                px: 2.5,
+                px: 2,
                 py: 1,
+                width : "100%",
               }}
             >
               <Typography variant="body1" opacity={0.75}>
                 System Color Mode
               </Typography>
-              <FormControlLabel
-                control={<Checkbox defaultChecked />} />
+              <Switch defaultChecked />
             </Box>
             <Box>
               <FormControlLabel
